@@ -60,3 +60,7 @@ h1 {
     transition: all 0.2s ease;
     box-shadow: 2px 2px 10px black;
 }
+
+.link-button:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,45 @@
+.YTthumb {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.YTthumb img {
+    display: block;
+    height: 200px;
+    object-fit: cover;
+}
+
+.YTthumb i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    opacity: 1;
+    font-size: 1.4rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.YTthumb::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 12;
+    transition: all ease 0.2s;
+    opacity: 0;
+}
+
+.YTthumb:hover::after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.YTthumb:hover i {
+    display: block;
+}
