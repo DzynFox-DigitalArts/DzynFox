@@ -130,9 +130,15 @@ main .desc p {
 /* PAGE-SECTION: OUR EXPERTISE */
 .ourExpertise {
     padding: 5vw;
+    background-color: #f4f6f8;
+}
+
+.ourExpertise .section-subheader {
+    margin: 0.5rem 0;
 }
 
 .expertise-container {
+    margin: 1rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
