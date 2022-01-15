@@ -1,12 +1,12 @@
 .section-header {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: bold;
     text-align: center;
 }
 
 .section-subheader {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -79,7 +79,7 @@ main .desc p {
 }
 
 /* PAGE-SECTION: YTVIDEOS */
-.ytvideos {
+/* .ytvideos {
     min-height: 30vh;
     margin: 1em 0;
     text-align: center;
@@ -88,6 +88,29 @@ main .desc p {
 
 .ytvideos .section-header {
     margin: 3rem 0;
+} */
+
+/* PAGE-SECTION: WHY US */
+.whyUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.whyUs .section-header {
+    font-size: 2vw;
+    margin: 1rem 0;
+}
+
+.whyUsContent p {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.whyUsTilesContainer {
+    display: flex;
 }
 
 /* PAGE-SECTION: OUR EXPERTISE */
