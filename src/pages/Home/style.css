@@ -1,3 +1,21 @@
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-subheader {
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-details {
+    font-size: 1vw;
+    text-align: center;
+}
+
 /* PAGE-SECTION: HEROSECTION */
 
 .main-container {
@@ -14,6 +32,7 @@ main {
 
 main p {
     font-size: 0.5vw;
+    font-weight: bold;
 }
 
 main h1 {
@@ -67,9 +86,11 @@ main .desc p {
     padding: 0 5vw;
 }
 
-.section-header {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5vw;
+.ytvideos .section-header {
     margin: 3rem 0;
-    font-weight: bold;
+}
+
+/* PAGE-SECTION: OUR EXPERTISE */
+.ourExpertise {
+    padding: 5vw;
 }
