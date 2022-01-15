@@ -25,7 +25,7 @@ const responsive = {
 const YTVideos = () => {
     return(
         <div className="ytvideos">
-            <h1>Check out our videos</h1>
+            <h1 className='section-header'>Check out our videos</h1>
             <Carousel responsive={responsive}>
                 <YoutubeVideoElement videoId={"rVINXVzNvV8"} />
                 <YoutubeVideoElement videoId={"MVY-XG3fRxI"} />

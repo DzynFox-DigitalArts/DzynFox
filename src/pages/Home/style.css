@@ -67,7 +67,8 @@ main .desc p {
     padding: 0 5vw;
 }
 
-.ytvideos h1 {
+.section-header {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5vw;
     margin: 3rem 0;
     font-weight: bold;
