@@ -10,7 +10,6 @@ const Home = () => {
         <>
             <Navbar />
             <HeroSection />
-            <YTVideos />
             <OurExpertise />
         </>
     )
