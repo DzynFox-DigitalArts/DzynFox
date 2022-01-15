@@ -8,6 +8,13 @@ const OurExpertise = () => {
             <p className="section-details">From designing your logo to all your branding essentials, everything at one place</p>
             <div className="expertise-container">
                 <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
+                <ExpertiseTile />
             </div>
         </section>
     )

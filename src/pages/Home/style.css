@@ -131,3 +131,8 @@ main .desc p {
 .ourExpertise {
     padding: 5vw;
 }
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
