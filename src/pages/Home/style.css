@@ -125,6 +125,7 @@ main .desc p {
 
 .whyUsTilesContainer {
     display: flex;
+    justify-content: center;
 }
 
 /* PAGE-SECTION: OUR EXPERTISE */
