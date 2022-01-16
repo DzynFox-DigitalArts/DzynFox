@@ -7,6 +7,7 @@ import OurExpertise from '../../sections/Home/OurExpertise';
 import WhyUs from '../../sections/Home/WhyUs';
 import StatsSection from '../../sections/Home/StatsSection';
 import TestimonialSection from '../../sections/Home/TestimonialSection';
+import ContactForm from '../../sections/Home/ContactForm';
 
 const Home = () => {
     return(
@@ -17,6 +18,7 @@ const Home = () => {
             <OurExpertise />
             <TestimonialSection />
             <StatsSection />
+            <ContactForm />
         </>
     )
 }
