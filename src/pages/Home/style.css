@@ -143,3 +143,12 @@ main .desc p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
+/* PAGE-SECTION: COUNT UP STATS */
+.statsSection {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    color: white;
+    background-color: rgb(10, 3, 3);
+}

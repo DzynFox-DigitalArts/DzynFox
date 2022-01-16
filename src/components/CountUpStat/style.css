@@ -1,0 +1,32 @@
+.CountUpFont, .suffix {
+    font-family: 'Quicksand';
+    font-size: 2rem;
+}
+
+.statNameGrp {
+    display: flex;
+    align-items: center;
+}
+
+.statGrp {
+    display: flex;
+    align-items: center;
+    margin-right: 10em;
+}
+
+.statGrp:last-child {
+    margin-right: 0;
+}
+
+.statGrp .stats {
+    text-align: center;
+}
+
+.statGrp p {
+    opacity: 1;
+}
+
+.statgrpIcon {
+    font-size: 4rem;
+    margin-right: 1rem;
+}
