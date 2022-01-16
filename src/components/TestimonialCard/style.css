@@ -1,0 +1,32 @@
+.TestimonialCard {
+    padding: 1em;
+    min-width: 500px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer, .review {
+    display: flex;
+}
+
+.qouteMark {
+    margin-right: 1ch;
+    font-size: 1.2rem;
+}
+
+.reviewer {
+    margin-left: auto;
+}
+
+.reviewerdetails {
+    margin-top: auto;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.reviewerImage {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}

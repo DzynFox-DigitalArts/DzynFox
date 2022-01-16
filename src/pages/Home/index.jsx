@@ -6,6 +6,7 @@ import YTVideos from '../../sections/Home/YoutubeVideos';
 import OurExpertise from '../../sections/Home/OurExpertise';
 import WhyUs from '../../sections/Home/WhyUs';
 import StatsSection from '../../sections/Home/StatsSection';
+import TestimonialSection from '../../sections/Home/TestimonialSection';
 
 const Home = () => {
     return(
@@ -14,6 +15,7 @@ const Home = () => {
             <HeroSection />
             <WhyUs />
             <OurExpertise />
+            <TestimonialSection />
             <StatsSection />
         </>
     )
