@@ -26,6 +26,10 @@
     color: black;
 }
 
+.socialLinks a {
+    color: inherit;
+}
+
 .memberDetails p {
     opacity: 1;
 }
