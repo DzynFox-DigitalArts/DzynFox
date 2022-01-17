@@ -15,13 +15,13 @@ const ContactForm = () => {
                             <i className="fas fa-envelope"></i>
                             <a href="mailto:dzynfox@gmail.com">dzynfox@gmail.com</a>
                         </div>
-                        <div className="contactinfoGrp">
+                        {/* <div className="contactinfoGrp">
                             <i className="fas fa-map-marker-alt"></i>
                             <p>B101-Amrapali
                             Sector-3, Vaishali
                             Ghaziabad - 201010
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="socials">
                         <a href=""><i className="fab fa-facebook-f"></i></a>
