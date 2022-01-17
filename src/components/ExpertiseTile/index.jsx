@@ -1,15 +1,16 @@
 import './style.css'
 
-const ExpertiseTile = () => {
+const ExpertiseTile = ({name, faIconName, desc}) => {
     return(
         <div className="expertiseTile">
             <div className="expertise-icon">
-                <i className='fas fa-bezier-curve'></i>
+                <i className={faIconName}></i>
             </div>
             <div className="expertiseDetails">
-                <h2 className="expertiseName">Illustrations</h2>
-                <p className="expertiseDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2 className="expertiseName">{name}</h2>
+                <p className="expertiseDesc">{desc}</p>
             </div>
+            <a href={encodeURIComponent({name})} className='expertiseLink'>Learn More</a>
         </div>
     )
 }
