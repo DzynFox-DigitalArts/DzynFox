@@ -3,6 +3,7 @@
 :root {
     --padding-horizontal: 2em;
     --brand-red: #FE0000;
+    --brand-black: #271b1b;
 }
 
 * {

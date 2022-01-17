@@ -1,4 +1,4 @@
-import animation from '../../drawables/hero.gif'
+import animation from '../../drawables/heroNew.gif'
 
 const HeroSection = () => {
     return(
