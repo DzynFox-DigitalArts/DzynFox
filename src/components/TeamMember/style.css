@@ -1,0 +1,54 @@
+.TeamMember{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.TeamMember img {
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.TeamMember .memberDetails {
+    background-color: white;
+    flex: 1;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.memberDetails p {
+    opacity: 1;
+}
+
+.memberDetails h1{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.memberDetails .des {
+    margin: 0.7rem 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.memberDetails .quote {
+    text-align: center;
+}
+
+.memberDetails .socialLinks {
+    width: 40%;
+    margin: 0.6rem 0;
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-evenly;
+}

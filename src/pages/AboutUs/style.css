@@ -1,0 +1,57 @@
+/* PAGE-SECTION: HERO SECTION */
+
+.AboutUsHeroMain .accent-text {
+    color: #FE0000;
+}
+
+.AboutUsHeroMain .section-subheader {
+    width: 80%;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    margin: 0.5rem auto;
+    opacity: 0.7;
+}
+
+.AboutUsHeroMainContent, .AboutUsHeroContentSecondary {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.AboutUsHeroMainContent img {
+    height: 35vh;
+    margin-right: 10vw;
+}
+
+.AboutUsHeroContentSecondary img{
+    height: 50vh;
+    margin-left: 10vw;
+}
+
+.AboutUsHeroContent {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.AboutUsHeroContent p {
+    font-size: 1.2rem;
+}
+
+.spacer {
+    display: block;
+    height: 2rem;
+}
+
+.AboutUsHeroContentSecondary .spacer {
+    height: 1rem;
+}
+
+/* PAGE-SECTION: OUR TEAM */
+.OurTeam .members {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
