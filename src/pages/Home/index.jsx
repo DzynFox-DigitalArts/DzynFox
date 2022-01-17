@@ -8,6 +8,7 @@ import WhyUs from '../../sections/Home/WhyUs';
 import StatsSection from '../../sections/Home/StatsSection';
 import TestimonialSection from '../../sections/Home/TestimonialSection';
 import ContactForm from '../../sections/Home/ContactForm';
+import OurClients from '../../sections/Home/OurClients';
 
 const Home = () => {
     return(
@@ -18,6 +19,7 @@ const Home = () => {
             <OurExpertise />
             <TestimonialSection />
             <StatsSection />
+            <OurClients />
             <ContactForm />
         </>
     )

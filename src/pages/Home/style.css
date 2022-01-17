@@ -169,6 +169,21 @@ main .desc p {
     background-color: var(--brand-black);
 }
 
+/* PAGE-SECTION: OUR CLIENTS */
+.OurClients {
+    margin-top: 3em;
+}
+
+.OurClients .section-header {
+    margin-bottom: 1.5em;
+}
+
+.clientLogo {
+    height: 150px;
+    margin-right: 1em;
+    z-index: 20;
+}
+
 /* PAGE-SECTION: CONTACT US */
 .ContactForm {
     padding: 3em 0;
