@@ -1,0 +1,25 @@
+.Footer {
+    background-color: var(--brand-black);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.Footer .section-header {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.Footer .accentText {
+    color: #ff3939;
+}
+
+.attribution {
+    font-size: 0.5rem;
+    margin: 1rem 0;
+}
+
+.attribution a {
+    color: white;
+    text-decoration: underline;
+}

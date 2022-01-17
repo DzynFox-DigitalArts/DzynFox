@@ -335,15 +335,3 @@
 .ContactForm-Form .sendBtn:hover {
     transform: scale(1.1);
 }
-
-.Footer {
-    background-color: var(--brand-black);
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-}
-
-.Footer .section-header {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
