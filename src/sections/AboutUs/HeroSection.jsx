@@ -1,4 +1,3 @@
-import Fox from '../../drawables/fox.png'
 import AboutPNG from '../../drawables/about.png'
 
 const HeroSection = () => {
@@ -15,22 +14,6 @@ const HeroSection = () => {
                     <span className="spacer"></span> 
                     Our primary goal is to make the design process itself enjoyable for our clients. Our clients will be heard, understood and recognized to be the best in their respective domains.</p>
                 </div>
-            </div>
-            <div className="AboutUsHeroContentSecondary">
-                <div className="AboutUsHeroContent">
-                    <p>
-                    The triangular face of fox represents demonstration, insight, discovery and higher outlook. It is often used to mark growth. Triangle also symbolizes strength.
-                    <span className="spacer"></span>
-                    The pointed ears of fox signifies observant and perfectionist. People with pointed ears are like Sherlock Holmes - highly perspective. They notice things that others don't. They have the tendency to dwell on things, as they want everything to be just right.
-                    <span className="spacer"></span>
-                    Fax has an elongated rostrum. Elongation indicates a better quality material. It signifies the capability to stretch out without becoming weaker in the process. The more elongated a fax is, the more formidable it is.
-                    <span className="spacer"></span>
-                    Fox has bushy tail that signifies it's eagerness, readiness and excitement to do something. Fox's thick tail aids its balance. The bushy tail also acts as it's protection during the winters.
-                    <span className="spacer"></span>
-                    Fox symbolizes cleverness, independence, playfulness and mischievousness, beauty, protection and good luck. Fox represents itself as a helper and a guide for active and motivated individuals. 
-                    </p>
-                </div>
-                <img src={Fox} alt="Men Discussing Idea" />
             </div>
         </main>
     )
