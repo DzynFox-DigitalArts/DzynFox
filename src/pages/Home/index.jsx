@@ -10,6 +10,7 @@ import TestimonialSection from '../../sections/Home/TestimonialSection';
 import ContactForm from '../../sections/Home/ContactForm';
 import OurClients from '../../sections/Home/OurClients';
 import OtherBrands from '../../sections/Home/OtherBrands';
+import Footer from '../../components/Footer';
 
 const Home = () => {
     return(
@@ -23,6 +24,7 @@ const Home = () => {
             <OurClients />
             <ContactForm />
             <OtherBrands />
+            <Footer />
         </>
     )
 }

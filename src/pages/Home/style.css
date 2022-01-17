@@ -174,6 +174,10 @@ main .desc p {
     margin-top: 3em;
 }
 
+.OtherBrands {
+    margin-bottom: 1.5em;
+}
+
 .OurClients .section-header, .OtherBrands .section-header {
     margin-bottom: 1.5em;
 }
@@ -330,4 +334,16 @@ main .desc p {
 
 .ContactForm-Form .sendBtn:hover {
     transform: scale(1.1);
+}
+
+.Footer {
+    background-color: var(--brand-black);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.Footer .section-header {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
