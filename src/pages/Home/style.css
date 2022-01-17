@@ -170,15 +170,15 @@ main .desc p {
 }
 
 /* PAGE-SECTION: OUR CLIENTS */
-.OurClients {
+.OurClients, .OtherBrands {
     margin-top: 3em;
 }
 
-.OurClients .section-header {
+.OurClients .section-header, .OtherBrands .section-header {
     margin-bottom: 1.5em;
 }
 
-.clientLogo {
+.clientLogo, .otherbrandlogo {
     height: 150px;
     margin-right: 1em;
     z-index: 20;
