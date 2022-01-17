@@ -37,19 +37,19 @@
     display: flex;
 }
 
-main {
+.HomeHeroMain {
     display: flex;
     justify-content: center;
     width: 80vw;
     margin: auto auto;
 }
 
-main p {
+.HomeHeroMain p {
     font-size: 0.5vw;
     font-weight: bold;
 }
 
-main h1 {
+.HomeHeroMain h1 {
     font-size: 2.5vw;
 }
 
@@ -77,11 +77,11 @@ main h1 {
     background-position: center;
 }
 
-main .desc {
+.HomeHeroMain .desc {
     margin: 0.1rem 0;
 }
 
-main .desc p {
+.HomeHeroMain .desc p {
     font-size: 2vw;
 }
 
