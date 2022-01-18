@@ -1,7 +1,11 @@
 /* PAGE-SECTION: HERO SECTION */
 
-.aboutus-subheader {
+.aboutus-subheader, .aboutus-subheader-small {
     font-weight: bold !important;
+}
+
+.AboutUsHeroMain .subheader-main {
+    font-family: 'Montserrat' !important;
 }
 
 .AboutUsHeroMain .accent-text {
