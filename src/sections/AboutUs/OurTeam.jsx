@@ -14,7 +14,7 @@ const OurTeam = () => {
                 <TeamMember imgUrl={Ria} designation={"Head Graphics"} name={"Ria"} li={`https://www.linkedin.com/in/ria-roy-9133561aa/`}/>
                 <TeamMember imgUrl={Amrit} designation={"Head Animations"} name={"Amrit"}/>
                 <TeamMember imgUrl={Ruchika} designation={"Graphic Designer"} name={"Ruchika"} li={`https://www.linkedin.com/in/ruchika-choudhary-587769225/`}/>
-                <TeamMember imgUrl={Ujjwal} designation={"Graphic Designer"} name={"Ujjwal"}/>
+                <TeamMember imgUrl={Ujjwal} designation={"Graphic Designer"} name={"Ujjwal"} li={`https://www.linkedin.com/in/ujjwal-kumar-gupta-19a033205/`}/>
                 <TeamMember imgUrl={Prabodh} designation={"Web Developer"} name={"Prabodh"} li={`https://www.linkedin.com/in/prabodhpanda/`}/>
             </div>
         </section>
