@@ -1,5 +1,4 @@
 import WhyUsTile from '../../components/WhyUsTile'
-import './style.css'
 
 const HeroSection = ({name}) => {
     return(
