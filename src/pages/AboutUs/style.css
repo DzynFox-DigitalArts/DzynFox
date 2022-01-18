@@ -1,5 +1,9 @@
 /* PAGE-SECTION: HERO SECTION */
 
+.aboutus-subheader {
+    font-weight: bold !important;
+}
+
 .AboutUsHeroMain .accent-text {
     color: #FE0000;
 }
@@ -53,5 +57,8 @@
 .OurTeam .members {
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em auto;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 0 1em;
 }

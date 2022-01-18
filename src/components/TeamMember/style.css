@@ -1,10 +1,9 @@
 .TeamMember{
-    width: 300px;
+    min-width: 300px;
     height: 400px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-right: 1em;
 }
 
 .TeamMember img {
