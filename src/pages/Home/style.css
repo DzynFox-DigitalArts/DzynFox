@@ -315,8 +315,8 @@
     opacity: 1;
 }
 
-.ContactForm-Form .sendBtn {
-    color: red;
+.ContactForm-Form .sendBtn, .secondaryBtn {
+    display: block;
     height: fit-content;
     width: fit-content;
     padding: 1em;
@@ -330,6 +330,14 @@
     transition: all ease 0.3s;
     box-shadow: 2px 2px 10px var(--brand-black);
     grid-column: 2 / 3;
+}
+
+.secondaryBtn {
+    margin: 3em auto 0 auto !important;
+}
+
+.secondaryBtn:hover {
+    transform: scale(1.1) !important;
 }
 
 .ContactForm-Form .sendBtn:hover {

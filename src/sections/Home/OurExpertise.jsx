@@ -16,6 +16,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
                 <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
             </div>
+            <a href="/expertise" className="secondaryBtn">See All Expertise</a>
         </section>
     )
 }
