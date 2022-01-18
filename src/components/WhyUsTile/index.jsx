@@ -1,12 +1,12 @@
 import './style.css'
 
-const WhyUsTile = () => {
+const WhyUsTile = ({name, faIconName, desc}) => {
     return(
         <div className="whyUsTile">
-            <i className='fas fa-bezier-curve'></i>
+            <i className={faIconName}></i>
             <div className="whyUsDetails">
-                <h2 className='whyUsName'>Design</h2>
-                <p className="whyUsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h2 className='whyUsName'>{name}</h2>
+                <p className="whyUsDesc">{desc}</p>
             </div>
         </div>
     )

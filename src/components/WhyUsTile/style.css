@@ -1,6 +1,6 @@
 .whyUsTile {
     width: 350px;
-    height: 350px;
+    min-height: 350px;
     background-color: #f4f6f8;
     padding: 2rem 1rem;
     display: flex;

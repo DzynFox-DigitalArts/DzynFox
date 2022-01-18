@@ -1,0 +1,12 @@
+.expertiseDetailedHero p {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.ourFeatures .features {
+    display: flex;
+    justify-content: center;
+}
