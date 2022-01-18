@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <img src={AboutPNG} alt="Men Discussing Idea" />
                 <div className="AboutUsHeroContent">
                     <p>
-                    We are a creative agency. We make things look pretty and attractive and ensure that they are liked by people they are meant for. We make sure that the design works and help you meet your objectives.
+                    We are DzynFox Digital Arts LLP. A company formed under the MarkAll group of companies. We are the design hands of MarkAll - Marketing All Out, a full-service marketing Agency.
                     <span className="spacer"></span>
                         <span className="aboutus-subheader">Our mission</span> is to offer creative services and imaginative solutions to strengthen every creative opportunity. We cultivate both the business and its clients through successful visual solutions and do so with professionalism, enthusiasm and dedication.
                     <span className="spacer"></span> 
