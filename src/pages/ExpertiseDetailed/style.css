@@ -19,3 +19,19 @@
     display: flex;
     justify-content: center;
 }
+
+.OurPortfolio {
+    background-color: #f4f6f8;
+    padding: 3em;
+}
+
+/* .OurPortfolio p {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+} */
+
+.portfolio {
+    margin: 2rem 0;
+}
