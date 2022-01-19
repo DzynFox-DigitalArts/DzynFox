@@ -1,57 +1,49 @@
-import Logo from '../../drawables/goglobal.png'
-
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useEffect, useState} from "react";
-// import sanityClient from '../../Sanity/client'
-// import imageUrlBuilder from "@sanity/image-url";
-// import ClipLoader from 'react-spinners/ClipLoader';
+import sanityClient from '../../sanity/client'
+import imageUrlBuilder from "@sanity/image-url";
 
-// const builder = imageUrlBuilder(sanityClient);
-// function urlFor(source) {
-//   return builder.image(source);
-// }
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 const OurPortfolio = ({name}) => {
 
-    // const [allImage, setAllImages] = useState([]);
-    // const [loading, setLoading] = useState(true);
+    const [allImage, setAllImages] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-    //     sanityClient
-    //       .fetch(
-    //         `*[_type == "portfolios" && name == $name][0]{
-    //         name,
-    //         images
-    //     }`, {name}
-    //       )
-    //       .then((data) => {
-    //           setAllImages(data.images);
-    //           setLoading(false);
-    //         })
-    //       .catch(console.error);
-    // }, []);
+    useEffect(() => {
+        sanityClient
+          .fetch(
+            `*[_type == "expertise" && title == $name][0]{
+            title,
+            images
+        }`, {name}
+          )
+          .then((data) => {
+                setAllImages(data.images) 
+            })
+          .catch(console.error);
+    }, []);
 
     return(
         <main className="OurPortfolio" id="portfolio">
             <header>
-                <h1 className="section-header">Our {name} Portfolio</h1>
-                <p className='section-subheader'>Take a look at what our highly capable teams ace at doing</p>
+                <h1>Our {name} Portfolio</h1>
+                <p>Take a look at what our highly capable teams ace at doing</p>
             </header>
             <div className="portfolio">
-                {/* <ClipLoader loading={loading} color="#ffffff" /> */}
                 <ResponsiveMasonry
-                    columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                    columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
                 >
-                    <Masonry gutter="3rem">
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
-                        <img src={Logo} alt="Client" />
+                    <Masonry gutter="1rem">
+                        {
+                            allImage && 
+                            allImage.map((image, index) => (
+                                <img key={index} src={urlFor(image).url()} />
+                            )) 
+                        }
                     </Masonry>
                 </ResponsiveMasonry>
             </div>
