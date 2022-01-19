@@ -105,6 +105,21 @@
 } */
 
 /* PAGE-SECTION: WHY US */
+
+.CustomSelectContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+
+.customSelect {
+    font-weight: normal;
+}
+
 .whyUs {
     display: flex;
     flex-direction: column;
@@ -126,6 +141,8 @@
 .whyUsTilesContainer {
     display: flex;
     justify-content: center;
+    margin: 2rem 0 5rem 0;
+    gap: 1rem;
 }
 
 /* PAGE-SECTION: OUR EXPERTISE */
