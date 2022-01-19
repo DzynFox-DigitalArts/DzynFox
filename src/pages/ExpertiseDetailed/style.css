@@ -1,3 +1,12 @@
+.expertiseDetailedHero .section-header {
+    color: var(--brand-red);
+}
+
+.expertiseDetailedHero .accent-text {
+    color: var(--brand-red);
+    font-size: 1.3em;
+}
+
 .expertiseDetailedHero p {
     width: 80%;
     margin: 2rem auto;

@@ -9,9 +9,9 @@ const HeroSection = ({name}) => {
             <div className="ourFeatures">
                 <h1 className="section-subheader">You won't be disappointed! <br /> Your project is in <span className="accent-text">our hands</span></h1>
                 <div className="features">
-                    <WhyUsTile faIconName={'fas fa-bezier-curve'} name={"Best in Class Design"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, numquam. Facere optio laborum maiores saepe quasi quos, quo rem voluptatibus!"}/>
-                    <WhyUsTile faIconName={'fas fa-bezier-curve'} name={"Best in Class Design"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, numquam. Facere optio laborum maiores saepe quasi quos, quo rem voluptatibus!"}/>
-                    <WhyUsTile faIconName={'fas fa-bezier-curve'} name={"Best in Class Design"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, numquam. Facere optio laborum maiores saepe quasi quos, quo rem voluptatibus!"}/>
+                    <WhyUsTile faIconName={'fas fa-swatchbook'} name={"Best in Class Design"} />
+                    <WhyUsTile faIconName={'fas fa-clock'} name={"On Time Delivery"} />
+                    <WhyUsTile faIconName={'fas fa-user'} name={"Customer-Centric Support Team"} />
                 </div>
             </div>
         </main>

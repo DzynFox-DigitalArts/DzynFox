@@ -1,19 +1,19 @@
 .whyUsTile {
-    width: 350px;
-    min-height: 350px;
+    width: 300px;
+    min-height: 300px;
     background-color: #f4f6f8;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    margin: 5rem 1rem;
+    margin: 3rem 1rem;
 }
 
 .whyUsName {
     font-family: "Quicksand";
     text-align: center;
-    margin: 1.5rem 0;
+    margin-top: 1.5rem;
 }
 
 .whyUsDesc {
