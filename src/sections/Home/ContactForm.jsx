@@ -1,6 +1,6 @@
 const ContactForm = () => {
     return(
-        <section className="ContactForm">
+        <section className="ContactForm" id="contact-us">
             <h1 className="section-header">Contact Us</h1>
             <div className="ContactFormContent">
                 <div className="ContactInfo">
