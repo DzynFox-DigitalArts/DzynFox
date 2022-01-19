@@ -8,7 +8,6 @@ const ExpertiseTile = ({name, faIconName, desc}) => {
             </div>
             <div className="expertiseDetails">
                 <h2 className="expertiseName">{name}</h2>
-                <p className="expertiseDesc">{desc}</p>
             </div>
             <a href={`/expertise/${encodeURIComponent(name)}`} className='expertiseLink'>Learn More</a>
         </div>

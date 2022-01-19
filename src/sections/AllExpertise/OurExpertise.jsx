@@ -7,26 +7,26 @@ const OurExpertise = () => {
             <h2 className="section-subheader">For all of your designing needs</h2>
             <p className="section-details">From designing your logo to all your branding essentials, everything at one place</p>
             <div className="expertise-container">
-                <ExpertiseTile name={"Logo Design"} faIconName={"fas fa-blog"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Graphic Design"} faIconName={"fas fa-swatchbook"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Advertisement Design"} faIconName={"fas fa-ad"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Video Presentation"} faIconName={"fas fa-video"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Brochure/Catalogue Design"} faIconName={"fas fa-file"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Newsletters/Magazines Design"} faIconName={"far fa-newspaper"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Presentations"} faIconName={"fas fa-tv"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"T-Shirts, Cup, Mug, Pens Design"} faIconName={"fas fa-tshirt"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Package, Labels and Sticker Design"} faIconName={"fas fa-receipt"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Web Design"} faIconName={"fas fa-laptop-code"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Promotional Campaign Design"} faIconName={"fas fa-sign"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Leaflet/Handout Design"} faIconName={"fas fa-file-alt"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Branding"} faIconName={"far fa-lightbulb"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Outdoor Ads"} faIconName={"fas fa-torii-gate"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Banner/Poster Design"} faIconName={"fas fa-image"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-                <ExpertiseTile name={"Social Media Ads"} faIconName={"fas fa-users"} desc={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
+                <ExpertiseTile name={"Logo Design"} faIconName={"fas fa-blog"} />
+                <ExpertiseTile name={"Graphic Design"} faIconName={"fas fa-swatchbook"} />
+                <ExpertiseTile name={"Advertisement Design"} faIconName={"fas fa-ad"} />
+                <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} />
+                <ExpertiseTile name={"Video Presentation"} faIconName={"fas fa-video"} />
+                <ExpertiseTile name={"Brochure/Catalogue Design"} faIconName={"fas fa-file"} />
+                <ExpertiseTile name={"Newsletters/Magazines Design"} faIconName={"far fa-newspaper"} />
+                <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} />
+                <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} />
+                <ExpertiseTile name={"Presentations"} faIconName={"fas fa-tv"} />
+                <ExpertiseTile name={"T-Shirts, Cup, Mug, Pens Design"} faIconName={"fas fa-tshirt"} />
+                <ExpertiseTile name={"Package, Labels and Sticker Design"} faIconName={"fas fa-receipt"} />
+                <ExpertiseTile name={"Web Design"} faIconName={"fas fa-laptop-code"} />
+                <ExpertiseTile name={"Promotional Campaign Design"} faIconName={"fas fa-sign"} />
+                <ExpertiseTile name={"Leaflet/Handout Design"} faIconName={"fas fa-file-alt"} />
+                <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} />
+                <ExpertiseTile name={"Branding"} faIconName={"far fa-lightbulb"} />
+                <ExpertiseTile name={"Outdoor Ads"} faIconName={"fas fa-torii-gate"} />
+                <ExpertiseTile name={"Banner/Poster Design"} faIconName={"fas fa-image"} />
+                <ExpertiseTile name={"Social Media Ads"} faIconName={"fas fa-users"} />
             </div>
         </section>
     )
