@@ -1,4 +1,4 @@
-import AboutPNG from '../../drawables/about.png'
+import BabyFox from '../../drawables/BabyFox.png'
 
 const HeroSection = () => {
     return(
@@ -6,7 +6,7 @@ const HeroSection = () => {
             <h1 className="section-header">We are <span className="accent-text">DzynFox</span></h1>
             <p className="section-subheader">We are designers. <br />We think. We plan. We create.<br />We conceive new ideas and bring them to reality.<br />We are creative artists but design things for a purpose</p>
             <div className="AboutUsHeroMainContent">
-                <img src={AboutPNG} alt="Men Discussing Idea" />
+                <img src={BabyFox} alt="Men Discussing Idea" />
                 <div className="AboutUsHeroContent">
                     <p>
                     We are <span className='aboutus-subheader'>DzynFox Digital Arts LLP</span>. A company formed under the MarkAll group of companies. We are the design hands of <span className='aboutus-subheader'>MarkAll - Marketing All Out</span>, a full-service marketing agency.
