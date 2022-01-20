@@ -1,0 +1,13 @@
+.blogs {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.allBlogsContainer {
+    min-height: 100vh;
+    display: grid;
+}

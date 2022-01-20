@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AboutUs from './pages/AboutUs';
 import AllExpertise from './pages/AllExpertise';
 import ExpertiseDetailed from './pages/ExpertiseDetailed';
+import Blogs from './pages/Blogs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="about-us" element={<AboutUs />}/>
           <Route path="expertise" element={<AllExpertise />}/>
           <Route path="expertise/:name" element={<ExpertiseDetailed />}/>
+          <Route path="blog" element={<Blogs />}/>
         </Routes>
       </BrowserRouter>
     </div>
