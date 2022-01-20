@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import AllExpertise from './pages/AllExpertise';
 import ExpertiseDetailed from './pages/ExpertiseDetailed';
 import Blogs from './pages/Blogs';
+import BlogDetailed from './pages/BlogDetailed';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="expertise" element={<AllExpertise />}/>
           <Route path="expertise/:name" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
+          <Route path="blog/:slug" element={<BlogDetailed />}/>
         </Routes>
       </BrowserRouter>
     </div>
