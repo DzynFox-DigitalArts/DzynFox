@@ -1,8 +1,13 @@
 import './style.css'
 
-const ExpertiseTile = ({name, faIconName, desc}) => {
+const ExpertiseTile = ({name, faIconName, imgUrl}) => {
+
+    const styles = {
+        backgroundImage: `url(${imgUrl})`
+    }
+
     return(
-        <div className="expertiseTile">
+        <div className="expertiseTile" style={styles}>
             <div className="expertise-icon">
                 <i className={faIconName}></i>
             </div>
