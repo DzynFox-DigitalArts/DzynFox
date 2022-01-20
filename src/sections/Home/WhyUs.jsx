@@ -10,31 +10,31 @@ const selectOptions = [
 
 const WhyUs = () => {
     
-    const [selectedLanguage, setSelectedLanguage] = useState('english')
+    const [selectedLanguage, setSelectedLanguage] = useState('hindi')
 
     return(
         <section className="whyUs">
             <h1 className="section-header marker">Why Choose Us?</h1>
             <div className="whyUsContent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil iste vero tenetur autem. Sequi, iusto sunt provident aperiam voluptatum at.</p>
+                <p>Because the right choice can make you happier</p>
                 <div className="CustomSelectContainer">
-                    <label htmlFor="lang">Select Your Preferred Language: </label>
+                    <label htmlFor="lang">Select your preferred language for our introduction videos: </label>
                     <Select
                         className="customSelect"
                         isSearchable={false} 
                         options={selectOptions}
-                        defaultValue={{value: 'english', label: 'English'}}
+                        defaultValue={{value: 'hindi', label: 'Hindi'}}
                         onChange={e => setSelectedLanguage(e.value)}
                     />
                 </div>
                 <div className="whyUsTilesContainer">
                     {
-                        selectedLanguage === 'english' ? 
+                        selectedLanguage === 'hindi' ? 
                         <>
-                            <YoutubeEmbed embedId="gsnqXt7d1mU" />
-                            <YoutubeEmbed embedId="gsnqXt7d1mU" />
-                            <YoutubeEmbed embedId="gsnqXt7d1mU" />
-                            <YoutubeEmbed embedId="gsnqXt7d1mU" />
+                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
+                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
+                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
+                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
                         </>
                         :
                         <>
