@@ -23,19 +23,19 @@ const OtherBrands = () => {
             <div className="othersbrandlogoes">
                 <Marquee pauseOnHover={true} gradient={false} speed={100}>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseA} alt="" className='otherbrandlogo'/></a>
-                    <a href='http://www.markall.in/' target="_blank"><img src={inhouseB} alt="" className='otherbrandlogo'/></a>
+                    <a href='http://schoolhype.markall.in/' target="_blank"><img src={inhouseB} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseC} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseD} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseE} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseF} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseG} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseH} alt="" className='otherbrandlogo'/></a>
-                    <a href='http://www.markall.in/' target="_blank"><img src={inhouseI} alt="" className='otherbrandlogo'/></a>
+                    <a href='https://craftbizwhiz.markall.in/' target="_blank"><img src={inhouseI} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseJ} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseL} alt="" className='otherbrandlogo'/></a>
-                    <a href='http://www.markall.in/' target="_blank"><img src={inhouseM} alt="" className='otherbrandlogo'/></a>
-                    <a href='http://www.markall.in/' target="_blank"><img src={inhouseN} alt="" className='otherbrandlogo'/></a>
-                    <a href='http://www.markall.in/' target="_blank"><img src={inhouseO} alt="" className='otherbrandlogo'/></a>
+                    <a href='https://spreadinindia.markall.in/' target="_blank"><img src={inhouseM} alt="" className='otherbrandlogo'/></a>
+                    <a href='https://marketernships.markall.in/' target="_blank"><img src={inhouseN} alt="" className='otherbrandlogo'/></a>
+                    <a href='http://mims.markall.in/' target="_blank"><img src={inhouseO} alt="" className='otherbrandlogo'/></a>
                     <a href='http://www.markall.in/' target="_blank"><img src={inhouseP} alt="" className='otherbrandlogo'/></a>
                 </Marquee>
             </div>
