@@ -34,7 +34,7 @@
 }
 
 .hide {
-    background: var(--brand-black);
+    background: var(--brand-red);
     overflow: hidden;
 }
 
