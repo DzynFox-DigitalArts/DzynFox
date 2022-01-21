@@ -22,6 +22,7 @@ const Blogs = () => {
             `*[_type == "post"]{
             title,
             slug,
+            desc,
             body,
             "author": author -> name,
             "authorTitle": author -> title,
@@ -53,6 +54,7 @@ const Blogs = () => {
                                 authorImageUrl={urlFor(blog.authorImage).height(100).url()}
                                 imgUrl={urlFor(blog.mainImage).height(300).url()}
                                 slug={blog.slug}
+                                desc={blog.desc}
                             />
                         ))
                     }
