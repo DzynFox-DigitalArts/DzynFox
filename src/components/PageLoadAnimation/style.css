@@ -9,6 +9,7 @@
     align-items: center;
     z-index: 10;
     padding: 3rem;
+    overflow: hidden;
 }
 
 .slider {
