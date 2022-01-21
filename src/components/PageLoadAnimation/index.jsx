@@ -21,12 +21,12 @@ const PageLoadAnimation = () => {
         .to(selector('.slider'), {
             y: '0%',
             duration: '1',
-            delay: '0.5'
+            delay: '2'
         })
         .to(selector('.slider'), {
             y: '-100%',
             duration: '1',
-            delay: '1'
+            delay: '2'
         })
         .to(coverRef.current, {
             y: '-100%',

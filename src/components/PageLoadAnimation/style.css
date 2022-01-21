@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--brand-black);
+    background-color: var(--brand-red);
     display: flex;
     align-items: center;
     z-index: 10;
