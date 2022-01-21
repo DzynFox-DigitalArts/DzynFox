@@ -1,8 +1,10 @@
+import PageLoadAnimation from '../../components/PageLoadAnimation';
 import animation from '../../drawables/heroNew.gif'
 
 const HeroSection = () => {
     return(
         <div className="main-container">
+            <PageLoadAnimation />
             <main className='HomeHeroMain'>
                 <div className="main-content" data-aos="fade-right">
                     <h1><span className="accent-text">Creativity <span className="accentBlack">and</span> Imagination</span> are the world's greatest weapons<br/>on this planet</h1>

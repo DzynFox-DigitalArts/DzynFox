@@ -1,0 +1,44 @@
+.pageLoadAnimation {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--brand-black);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    padding: 3rem;
+}
+
+.slider {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(27, 27, 27);
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider img {
+    height: 90vh;
+}
+
+.pageLoadAnimation h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+.hide {
+    background: var(--brand-black);
+    overflow: hidden;
+}
+
+.hide span {
+    display: inline-block;
+    transform: translateY(100%);
+}
