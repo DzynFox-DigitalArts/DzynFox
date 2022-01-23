@@ -156,9 +156,12 @@
 }
 
 .expertise-container {
-    margin: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    max-width: 1350px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem auto;
 }
 
 /* PAGE-SECTION: OUR TESTIMONIALS */
