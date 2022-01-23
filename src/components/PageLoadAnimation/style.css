@@ -16,6 +16,7 @@
 
 .pageLoadAnimation .intro-text {
     width: 100%;
+    margin-left: -40px;
 }
 
 .slider {
