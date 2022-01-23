@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 .pageLoadAnimation {
     height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--brand-red);
     display: flex;
     align-items: center;
+    background-color: var(--brand-red);
     z-index: 10;
-    padding: 3rem;
     overflow: hidden;
+    text-align: center;
+}
+
+.pageLoadAnimation .intro-text {
+    width: 100%;
 }
 
 .slider {
@@ -32,6 +38,7 @@
 .pageLoadAnimation h1 {
     font-size: 5rem;
     color: white;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .hide {
