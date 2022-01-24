@@ -13,6 +13,7 @@
 .qouteMark {
     margin-right: 1ch;
     font-size: 1.2rem;
+    color: var(--brand-red);
 }
 
 .review p {
