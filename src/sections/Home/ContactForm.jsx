@@ -1,4 +1,24 @@
+import { useState } from "react"
+
 const ContactForm = () => {
+    const [fname, setFname] = useState('')
+    const [lname, setLname] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [msg, setMsg] = useState()
+
+    const sendMsg = e => {
+        e.preventDefault();
+        // const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
+        // const emailContent = {
+        //     to: 'dev.prabodhpanda@gmail.com', // Change to your recipient
+        //     from: 'graphyyy.markall@gmail.com', // Change to your verified sender
+        //     subject: 'New Client Message',
+        //     text: messageContent,
+        // }
+        // SgMail.send(emailContent).then(() => console.log("Email Sent.."))
+    }
+
     return(
         <section className="ContactForm" id="contact-us">
             <h1 className="section-header">Contact Us</h1>
@@ -32,26 +52,26 @@ const ContactForm = () => {
                 </div>
                 <form className="ContactForm-Form">
                     <div className="inputGroup">
-                        <input type="text" name="fname" />
+                        <input type="text" name="fname" value={fname} onChange={e => setFname(e.target.value)}/>
                         <label htmlFor="fname" className="inputLbl">First Name</label>
                     </div>
                     <div className="inputGroup">
-                        <input type="text" name="lname" />
+                        <input type="text" name="lname" value={lname} onChange={e => setLname(e.target.value)} />
                         <label htmlFor="lname" className="inputLbl">Last Name</label>
                     </div>
                     <div className="inputGroup">
-                        <input type="email" name="email" />
+                        <input type="email" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
                         <label htmlFor="email" className="inputLbl">E-Mail</label>
                     </div>
                     <div className="inputGroup">
-                        <input type="tel" name="phone" />
+                        <input type="tel" name="phone" value={phone} onChange={e => setPhone(e.target.value)}/>
                         <label htmlFor="phone" className="inputLbl">Phone</label>
                     </div>
                     <div className="inputGroup msgBoxInputGrp">
-                        <textarea name="msg" className="msgBox" cols="30" rows="10"></textarea>
+                        <textarea name="msg" className="msgBox" cols="30" rows="10" value={msg} onChange={e => setMsg(e.target.value)}></textarea>
                         <label htmlFor="msg" className="inputLbl">Message</label>
                     </div>
-                    <button type="submit" className="sendBtn">Send Message</button>
+                    <button type="submit" className="sendBtn" onClick={e => sendMsg(e)}>Send Message</button>
                 </form>
             </div>
         </section>
