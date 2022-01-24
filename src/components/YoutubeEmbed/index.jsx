@@ -5,6 +5,14 @@ import { useState } from "react";
 
 const YoutubeEmbed = ({ embedId }) => {
 
+  const options = {
+    playerVars: {
+      fs: 0,
+      enablejsapi: 1,
+      'origin': window.location.origin,
+    }
+  }
+
   //DO NOT REMOVE THIS RANDOM STATE: This state is used to refresh the iframe once the video has ended 
   const [random, setRandom] = useState();
 
@@ -23,6 +31,7 @@ const YoutubeEmbed = ({ embedId }) => {
     <YouTube 
       key={random}
       videoId={embedId}
+      opts={options}
       onEnd={event =>  setRandom(Math.random())}
     />
     </div>
