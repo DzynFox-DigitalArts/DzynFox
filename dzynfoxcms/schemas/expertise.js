@@ -9,6 +9,11 @@ export default {
         type: 'string',
       },
       {
+        name: 'bgimage',
+        title: 'Background Image',
+        type: 'image',
+      },
+      {
         name: 'images',
         title: 'Portfolio Images',
         type: 'array',
