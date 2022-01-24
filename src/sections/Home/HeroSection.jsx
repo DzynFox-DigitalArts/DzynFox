@@ -7,7 +7,7 @@ const HeroSection = () => {
             <PageLoadAnimation />
             <main className='HomeHeroMain'>
                 <div className="main-content" data-aos="fade-right">
-                    <h1><span className="accent-text">Creativity <span className="accentBlack">and</span> Imagination</span> are the world's greatest weapons<br/>on this planet</h1>
+                    <h1><span className="accent-text">Creativity <span className="accentBlack">&amp;</span> Imagination</span> are the world's greatest weapons<br/>on this planet</h1>
                     <div className="desc">
                         <p>We have them in abundance</p>
                         <p className="redp">Have us to grow your business</p>
