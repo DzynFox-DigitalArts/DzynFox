@@ -24,7 +24,6 @@ const YoutubeEmbed = ({ embedId }) => {
       key={random}
       videoId={embedId}
       onEnd={event =>  setRandom(Math.random())}
-      onReady={event => event.target.getIframe().allowFullscreen(false)}
     />
     </div>
   </div>
