@@ -1,13 +1,38 @@
 import './style.css'
+import { useEffect, useRef} from "react";
+import sanityClient from '../../sanity/client'
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 
 const ExpertiseTile = ({name, faIconName, imgUrl}) => {
 
-    const styles = {
-        backgroundImage: `url(${imgUrl})`
-    }
+    const tileRef = useRef()
+
+    useEffect(() => {
+        sanityClient
+          .fetch(
+            `*[_type == "expertise" && title == $name][0]{
+            bgimage {
+                asset->{
+                    url
+                }
+            }
+        }`, {name}
+          )
+          .then((data) => {
+              if(data.bgimage) {
+                tileRef.current.style.backgroundImage = `url(${data.bgimage.asset.url})`
+              }
+        })
+          .catch(console.error);
+    }, []);
 
     return(
-        <div className="expertiseTile" style={styles}>
+        <div className="expertiseTile" ref={tileRef}>
             <div className="expertise-icon">
                 <i className={faIconName}></i>
             </div>
