@@ -30,7 +30,7 @@ exports.handler = async (event, context) => {
         return {
           statusCode: 200,
           headers,
-          body: 'HELLO TEST',
+          body: event.body,
         };
       }
 
