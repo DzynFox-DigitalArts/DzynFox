@@ -17,7 +17,6 @@ const ContactForm = () => {
         e.preventDefault();
         const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
         const postData = {
-            email: email,
             message: messageContent
         }
         fetch("https://dzynfox.netlify.app/.netlify/functions/notify", 

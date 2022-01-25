@@ -17,12 +17,11 @@ exports.handler = async (event, context) => {
       } else if (event.httpMethod === "POST") {
 
         const req = JSON.parse(event.body)
-        const email = req.email
         const msgContent = req.message
 
         sgMail.setApiKey('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')
         const msg = {
-          to: email, // Change to your recipient
+          to: "dev.prabodhpanda@gmail.com", // Change to your recipient
           from: 'graphyyy.markall@gmail.com', // Change to your verified sender
           subject: 'New Query!',
           text: msgContent,
