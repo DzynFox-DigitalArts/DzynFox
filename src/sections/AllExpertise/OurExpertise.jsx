@@ -18,7 +18,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Promotional Campaign Design"} faIconName={"fas fa-sign"} />
                 <ExpertiseTile name={"Outdoor Ads"} faIconName={"fas fa-torii-gate"} />
 
-                {/* <ExpertiseTile name={"Logo Design"} faIconName={"fas fa-blog"} />
+                <ExpertiseTile name={"Logo Design"} faIconName={"fas fa-blog"} />
                 <ExpertiseTile name={"Graphic Design"} faIconName={"fas fa-swatchbook"} />
                 <ExpertiseTile name={"Advertisement Design"} faIconName={"fas fa-ad"} />
                 <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} />
@@ -37,7 +37,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Branding"} faIconName={"far fa-lightbulb"} />
                 <ExpertiseTile name={"Outdoor Ads"} faIconName={"fas fa-torii-gate"} />
                 <ExpertiseTile name={"Banner/Poster Design"} faIconName={"fas fa-image"} />
-                <ExpertiseTile name={"Social Media Ads"} faIconName={"fas fa-users"} /> */}
+                <ExpertiseTile name={"Social Media Ads"} faIconName={"fas fa-users"} />
             </div>
         </section>
     )
