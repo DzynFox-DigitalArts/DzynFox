@@ -12,13 +12,13 @@ exports.handler = async (event, context) => {
     // const email = req.email
     // const msgContent = req.message
 
-    sgMail.setApiKey('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')
-    const msg = {
-        to: email, // Change to your recipient
-        from: 'graphyyy.markall@gmail.com', // Change to your verified sender
-        subject: 'New Query!',
-        text: msgContent,
-    }
+    // sgMail.setApiKey('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')
+    // const msg = {
+    //     to: email, // Change to your recipient
+    //     from: 'graphyyy.markall@gmail.com', // Change to your verified sender
+    //     subject: 'New Query!',
+    //     text: msgContent,
+    // }
 
     if (event.httpMethod === "OPTIONS") {
         return {
