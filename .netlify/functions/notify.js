@@ -27,7 +27,6 @@ exports.handler = async (event, context) => {
           body: JSON.stringify({ message: "Successful preflight call." }),
         };
       } else if (event.httpMethod === "POST") {
-        const { name } = JSON.parse(event.body);
         return {
           statusCode: 200,
           headers,
