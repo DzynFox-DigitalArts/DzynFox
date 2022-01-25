@@ -16,8 +16,7 @@ const ContactForm = () => {
     const sendMsg = e => {
         e.preventDefault();
         const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
-        fetch("https://dzynfox.netlify.app/.netlify/functions/notify", {method: 'POST', headers , body: {"email" : "dev.prabodhpanda@gmail.com",
-        "message": "Test Email from Back-End"}})
+        fetch("https://dzynfox.netlify.app/.netlify/functions/notify", {method: 'POST', headers})
         .then(response => {console.log(response.json)})
         .catch(err => console.log("ERROR"))
     }

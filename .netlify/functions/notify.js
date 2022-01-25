@@ -8,9 +8,9 @@ exports.handler = async (event, context) => {
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
       };
 
-    const req = JSON.parse(event.body)
-    const email = req.email
-    const msgContent = req.message
+    // const req = JSON.parse(event.body)
+    // const email = req.email
+    // const msgContent = req.message
 
     sgMail.setApiKey('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')
     const msg = {
@@ -31,7 +31,7 @@ exports.handler = async (event, context) => {
         return {
           statusCode: 200,
           headers,
-          body: JSON.stringify({email: email, message: msgContent}),
+          body: 'HELLO TEST',
         };
       }
 
