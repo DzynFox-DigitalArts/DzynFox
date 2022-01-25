@@ -72,6 +72,10 @@
 }
 
 .expertiseLink {
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid var(--brand-red);
+    border-radius: 20px;
     text-align: center;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
