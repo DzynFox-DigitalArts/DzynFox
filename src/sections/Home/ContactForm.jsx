@@ -7,16 +7,18 @@ const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [msg, setMsg] = useState()
 
+    const headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
+      };
+
     const sendMsg = e => {
         e.preventDefault();
-        // const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
-        // const emailContent = {
-        //     to: 'dev.prabodhpanda@gmail.com', // Change to your recipient
-        //     from: 'graphyyy.markall@gmail.com', // Change to your verified sender
-        //     subject: 'New Client Message',
-        //     text: messageContent,
-        // }
-        // SgMail.send(emailContent).then(() => console.log("Email Sent.."))
+        const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
+        fetch("http://localhost:9000/notify", {method: 'POST', headers , body: {email: 'HELLO TEST'}})
+        .then(response => {console.log(response.json)})
+        .catch(err => console.log("ERROR"))
     }
 
     return(

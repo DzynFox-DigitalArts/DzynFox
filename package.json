@@ -11,6 +11,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "gsap": "^3.9.1",
+    "http-proxy-middleware": "^2.0.2",
     "netlify-lambda": "^2.0.15",
     "react": "^17.0.2",
     "react-countup": "^6.1.0",
@@ -27,6 +28,7 @@
     "web-vitals": "^2.1.3"
   },
   "scripts": {
+    "api:serve": "netlify-lambda serve .netlify/functions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
