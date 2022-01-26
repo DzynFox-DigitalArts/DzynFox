@@ -18,7 +18,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Promotional Campaign Design"} faIconName={"fas fa-sign"} />
                 <ExpertiseTile name={"Outdoor Ads"} faIconName={"fas fa-torii-gate"} />
 
-                <ExpertiseTile name={"Branding"} faIconName={"far fa-lightbulb"} />
+                <ExpertiseTile name={"Branding"} faIconName={"fas fa-blog"} />
                 <ExpertiseTile name={"T-Shirts, Cup, Mug, Pens Design"} faIconName={"fas fa-tshirt"} />
                 <ExpertiseTile name={"Package, Labels and Sticker Design"} faIconName={"fas fa-receipt"} />
                 <ExpertiseTile name={"Leaflet/Handout Design"} faIconName={"fas fa-file-alt"} />

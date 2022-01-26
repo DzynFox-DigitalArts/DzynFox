@@ -15,7 +15,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} />
                 <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} />
                 <ExpertiseTile name={"Video Presentation"} faIconName={"fas fa-video"} />
-                <ExpertiseTile name={"Branding"} faIconName={"far fa-lightbulb"} />
+                <ExpertiseTile name={"Branding"} faIconName={"fas fa-blog"} />
                 
             </div>
             <a href="/expertise" className="secondaryBtn">See All Expertise</a>
