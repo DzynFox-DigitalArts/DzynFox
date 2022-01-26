@@ -11,6 +11,7 @@ import post from './post'
 import author from './author'
 import expertise from './expertise'
 import testimonials from './testimonials'
+import greetings from './greetings'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,6 +29,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     blockContent,
     expertise,
-    testimonials
+    testimonials,
+    greetings
   ]),
 })

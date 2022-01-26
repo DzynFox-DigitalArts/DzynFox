@@ -1,6 +1,7 @@
 import './style.css'
 import {useEffect, useRef, useState} from 'react'
 import { gsap } from 'gsap'
+import sanityClient from '../../sanity/client'
 
 const PageLoadAnimation = () => {
 
@@ -8,8 +9,35 @@ const PageLoadAnimation = () => {
     const selector = gsap.utils.selector(coverRef);
     const tl = useRef();
 
-    const [animationFinished, setAnimationFinished] = useState(false)
-    const [imageLoader, setimageLoader] = useState(false)
+    const [greetings, setGreetings] = useState(undefined);
+
+    const getLocalDateString = () => {
+        let localDate = new Date();
+        const offset = localDate.getTimezoneOffset()
+        localDate = new Date(localDate.getTime() - (offset*60*1000))
+        return localDate.toISOString().split('T')[0]
+    }
+
+    useEffect(() => {
+        const date = getLocalDateString()
+        sanityClient.fetch(`
+        *[_type == 'greetings' && date == $date][0]{
+            name,
+            image{
+            asset -> {
+            url
+          }
+          }
+          }
+        `, {date})
+        .then(data => {
+            if(data.name) {
+                setGreetings(data)
+            } else {
+                moveSliderNoContent()
+            }
+        })
+    }, [])
 
     useEffect(() => {
         tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
@@ -18,7 +46,10 @@ const PageLoadAnimation = () => {
             duration: 1,
             stagger: 0.25,
         })
-        .to(selector('.slider'), {
+    }, [])
+
+    const moveSlider = () => {
+        tl.current.to(selector('.slider'), {
             y: '0%',
             duration: '1',
             delay: '2'
@@ -31,7 +62,22 @@ const PageLoadAnimation = () => {
         .to(coverRef.current, {
             y: '-100%',
         }, '-=1')
-    }, [])
+    }
+
+    const moveSliderNoContent = () => {
+        tl.current.to(selector('.slider'), {
+            y: '0%',
+            duration: '1',
+            delay: '2'
+        })
+        .to(selector('.slider'), {
+            y: '-100%',
+            duration: '1',
+        })
+        .to(coverRef.current, {
+            y: '-100%',
+        }, '-=2')
+    }
 
     return(
         <div className="pageLoadAnimation" ref={coverRef}>
@@ -43,9 +89,14 @@ const PageLoadAnimation = () => {
                     <span className="text">Brand New Way</span>
                 </h1>
             </div>
-            <div className="slider">
-                <img src='https://media-exp1.licdn.com/dms/image/C4D22AQEte2Z0d-UWmA/feedshare-shrink_1280/0/1640926306548?e=1645660800&v=beta&t=YSteHU5c5oge9M9TBQW_WJivgYKWamr6BiVi5Z6zLU0' alt='Greetings'></img>
-            </div>
+            {greetings
+                ?
+                <div className="slider">
+                    <img src={greetings.image.asset.url} alt={greetings.name} onLoad={moveSlider}/>
+                </div>
+                :
+                <div className="slider"></div>
+            }
         </div>
     )
 }
