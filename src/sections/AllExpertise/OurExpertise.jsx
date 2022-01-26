@@ -25,6 +25,13 @@ const OurExpertise = () => {
 
                 <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} />
                 <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} />
+                <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} />
+                <ExpertiseTile name={"Newsletters/Magazines Design"} faIconName={"far fa-newspaper"} />
+
+                <ExpertiseTile name={"Brochure/Catalogue Design"} faIconName={"fas fa-file"} />
+                <ExpertiseTile name={"Presentations"} faIconName={"fas fa-tv"} />
+                <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} />
+                <ExpertiseTile name={"Video Presentation"} faIconName={"fas fa-video"} />
             </div>
         </section>
     )
