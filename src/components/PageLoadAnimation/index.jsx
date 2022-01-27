@@ -10,6 +10,7 @@ const PageLoadAnimation = () => {
     const tl = useRef();
 
     const [greetings, setGreetings] = useState(undefined);
+    const [loading, setLoading] = useState(true);
 
     const getLocalDateString = () => {
         let localDate = new Date();
@@ -45,16 +46,15 @@ const PageLoadAnimation = () => {
             y: '0%',
             duration: 1,
             stagger: 0.25,
+        }).to(selector('.slider'), {
+            y: '0%',
+            duration: '1',
+            delay: '2'
         })
     }, [])
 
     const moveSlider = () => {
         tl.current.to(selector('.slider'), {
-            y: '0%',
-            duration: '1',
-            delay: '2'
-        })
-        .to(selector('.slider'), {
             y: '-100%',
             duration: '1',
             delay: '2'
@@ -65,11 +65,7 @@ const PageLoadAnimation = () => {
     }
 
     const moveSliderNoContent = () => {
-        tl.current.to(selector('.slider'), {
-            y: '0%',
-            duration: '1',
-            delay: '2'
-        })
+        tl.current
         .to(selector('.slider'), {
             y: '-100%',
             duration: '1',
