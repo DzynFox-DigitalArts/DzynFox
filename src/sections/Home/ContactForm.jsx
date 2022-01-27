@@ -1,17 +1,21 @@
 import { useState } from "react"
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () => {
     const [fname, setFname] = useState('')
     const [lname, setLname] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
-    const [msg, setMsg] = useState()
+    const [msg, setMsg] = useState('')
 
-    const headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE'
-      };
+    const validateEmail = (email) => {
+        return String(email)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+    };
 
     const sendMsg = e => {
         e.preventDefault();
@@ -19,14 +23,50 @@ const ContactForm = () => {
         const postData = {
             message: messageContent
         }
-        fetch("https://dzynfox.netlify.app/.netlify/functions/notify", 
-        {method: 'POST', headers , body: JSON.stringify(postData)})
-        .then(response => {console.log(response.json)})
-        .catch(err => console.log("ERROR"))
+
+        if(fname === '' || lname === '' || email === '' || phone === '' || msg === '') {
+            toast.error('Please fill up all the fields', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else if (!validateEmail(email)) {
+            toast.error('Please enter a vailid email', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else {
+            toast.promise(fetch("https://dzynfox.netlify.app/.netlify/functions/notify", 
+            {method: 'POST', body: JSON.stringify(postData)}), {
+            pending: 'Sending Message',
+            success: 'Message sent',
+            error: 'An error occured while sending the message! Please try again later or contact us directly'
+            })
+        }
     }
 
     return(
         <section className="ContactForm" id="contact-us">
+            <ToastContainer 
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
             <h1 className="section-header">Contact Us</h1>
             <div className="ContactFormContent">
                 <div className="ContactInfo">
