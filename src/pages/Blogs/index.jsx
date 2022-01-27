@@ -1,5 +1,5 @@
 import './style.css'
-
+import {ClipLoader} from 'react-spinners';
 import {useState, useEffect} from 'react'
 import Navbar from '../../components/Navbar';
 import sanityClient from '../../sanity/client';
@@ -15,6 +15,7 @@ function urlFor(source) {
 const Blogs = () => {
 
     const [allBlogs, setAllBlogs] = useState([])
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         sanityClient
@@ -31,6 +32,7 @@ const Blogs = () => {
         }`
           )
           .then((data) => {
+                setLoading(false)
                 setAllBlogs(data);
             })
           .catch(console.error);
@@ -44,6 +46,7 @@ const Blogs = () => {
                     Our Featured Blogs
                 </h1>
                 <div className="blogs">
+                    <ClipLoader loading={loading} />
                     { allBlogs && 
                         allBlogs.map((blog, index) => (
                             <BlogTile 
