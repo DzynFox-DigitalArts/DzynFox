@@ -1,0 +1,4 @@
+export default {
+    "Graphic Design": "Graphic design is the art or profession of visual communication that combines images, words, and ideas to convey information to an audience, especially to produce a specific effect. In other words, graphic design is communication design; It’s a way of conveying ideas through visuals and design. At DzynFox we are the expert of these. Come & join hands with us, we shall bring success to your business together. Believe it or not We're the Best in this field.",
+    "Logo Design" : "Logo design is a branding and marketing tool that can be used to signify a business. Put simply; your logo represents your business brand. It’s something simple that, as you build brand loyalty, your customers come to trust and recognise. DzynFox is the strongest bridge to build that trust & support with your customers by designing logos for you. Trust us, we're the Best in this field."
+}
