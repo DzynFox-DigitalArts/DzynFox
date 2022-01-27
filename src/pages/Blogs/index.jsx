@@ -43,7 +43,7 @@ const Blogs = () => {
             <Navbar />
             <main className="allBlogs">
                 <h1 className="section-header">
-                    Our Featured Blog
+                    Our Featured Blogs
                 </h1>
                 <div className="blogs">
                     <ClipLoader loading={loading} />
