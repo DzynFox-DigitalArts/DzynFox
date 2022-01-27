@@ -21,6 +21,7 @@ const ContactForm = () => {
         e.preventDefault();
         const messageContent = `Name: ${fname} ${lname} \n Phone: ${phone} \n Email: ${email} \n Message: ${msg}`
         const postData = {
+            name: fname,
             message: messageContent
         }
 

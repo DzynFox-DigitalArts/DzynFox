@@ -18,12 +18,13 @@ exports.handler = async (event, context) => {
 
         const req = JSON.parse(event.body)
         const msgContent = req.message
+        const name = req.name
 
         sgMail.setApiKey('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')
         const msg = {
-          to: "dev.prabodhpanda@gmail.com", // Change to your recipient
+          to: "dzynfox@gmail.com", // Change to your recipient
           from: 'graphyyy.markall@gmail.com', // Change to your verified sender
-          subject: 'New Query!',
+          subject: `New Query from ${name}`,
           text: msgContent,
         }
 
