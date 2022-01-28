@@ -11,7 +11,6 @@ function urlFor(source) {
 const OurPortfolio = ({name}) => {
 
     const [allImage, setAllImages] = useState([]);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         sanityClient
@@ -41,7 +40,7 @@ const OurPortfolio = ({name}) => {
                         {
                             allImage && 
                             allImage.map((image, index) => (
-                                <img key={index} src={urlFor(image).url()} />
+                                <img key={index} src={urlFor(image).url()} alt="Portfolio"/>
                             )) 
                         }
                     </Masonry>

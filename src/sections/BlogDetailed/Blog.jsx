@@ -1,8 +1,6 @@
 import {useEffect, useState} from 'react'
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from '../../sanity/client'
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);

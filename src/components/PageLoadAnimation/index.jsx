@@ -10,7 +10,6 @@ const PageLoadAnimation = () => {
     const tl = useRef();
 
     const [greetings, setGreetings] = useState(undefined);
-    const [loading, setLoading] = useState(true);
 
     const getLocalDateString = () => {
         let localDate = new Date();

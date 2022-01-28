@@ -1,12 +1,6 @@
 import './style.css'
 import { useEffect, useRef} from "react";
-import sanityClient from '../../sanity/client'
-import imageUrlBuilder from "@sanity/image-url";
-
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
+import sanityClient from '../../sanity/client';
 
 const ExpertiseTile = ({name, faIconName, imgUrl}) => {
 

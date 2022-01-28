@@ -8,7 +8,7 @@ const Footer = () => {
                     <h1 className="section-header">DZYN<span className='accentText'>FOX</span></h1>
                     <p>A Brand of Markall</p>
                     <p>COPYRIGHT &copy; Aspire Business Multiplication Solutions</p>
-                    <p className='attribution'>Images designed with the help of <a href="https://www.freepik.com" target="_blank" rel="nofollow">Freepik</a></p>
+                    <p className='attribution'>Images designed with the help of <a href="https://www.freepik.com" target="_blank" rel="nofollow noreferrer">Freepik</a></p>
                 </div>
                 <div className="address">
                     <h2>Our Location</h2>
