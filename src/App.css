@@ -13,7 +13,7 @@
     text-decoration: none;
 }
 
-body {
+body, html {
     max-width: 100vw;
     overflow-x: hidden;
 }
