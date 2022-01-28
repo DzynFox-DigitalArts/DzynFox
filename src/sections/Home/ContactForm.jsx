@@ -91,10 +91,10 @@ const ContactForm = () => {
                         </div> */}
                     </div>
                     <div className="socials">
-                        <a href=""><i className="fab fa-facebook-f"></i></a>
-                        <a href=""><i className="fab fa-instagram"></i></a>
-                        <a href=""><i className="fab fa-linkedin-in"></i></a>
-                        <a href=""><i className="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/DzynFox-DigitalArts-105250575387678" target={"_blank"} rel="nofollow noreferrer"><i className="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dzynfox/" target={"_blank"} rel="nofollow noreferrer"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/dzynfox/" target={"_blank"} rel="nofollow noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UC6ZfkNO_QGy2RvPckmQ_tdw" target={"_blank"} rel="nofollow noreferrer"><i className="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <form className="ContactForm-Form">
