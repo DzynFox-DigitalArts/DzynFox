@@ -147,7 +147,7 @@
 
 /* PAGE-SECTION: OUR EXPERTISE */
 .ourExpertise {
-    padding: 5vw;
+    padding: 3vw 0;
     background-color: #f4f6f8;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .expertise-container {
-    max-width: 1350px;
+    /* max-width: 90vw; */
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
