@@ -58,6 +58,34 @@
         align-items: center;
         padding: 2rem 0;
     }
+
+    .ContactFormContent {
+        width: 90vw !important;
+    }
+
+    .ContactFormContent .ContactInfo {
+        flex: 6;
+    }
+
+    .ContactForm-Form {
+        display: flex !important;
+        flex-direction: column;
+        max-height: 80vh;
+    }
+
+    .ContactForm-Form .inputGroup {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ContactFormContent {
+        width: 95vw !important;
+    }
+
+    .ContactFormContent .ContactInfo {
+        flex: 4;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -111,5 +139,10 @@
     .expertise-container .expertiseTile {
         width: 90vw !important;
         height: 90vw !important;
+    }
+    /* SECTION STYLES: CONTACT US FORM */
+    .ContactFormContent {
+        display: flex;
+        flex-direction: column;
     }
 }
