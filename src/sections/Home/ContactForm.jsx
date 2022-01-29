@@ -46,7 +46,7 @@ const ContactForm = () => {
                 progress: undefined,
             });
         } else {
-            toast.promise(fetch("https://dzynfox.netlify.app/.netlify/functions/notify", 
+            toast.promise(fetch("https://dzynfox.com/.netlify/functions/notify", 
             {method: 'POST', body: JSON.stringify(postData)}), {
             pending: 'Sending Message',
             success: 'Message sent',
