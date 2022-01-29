@@ -44,6 +44,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5vw;
+}
+
+@media screen and (min-width: 1600px) {
+    .expertiseName {
+       font-size: 1.5rem;
+    }
 }
 
 .expertiseDesc {
