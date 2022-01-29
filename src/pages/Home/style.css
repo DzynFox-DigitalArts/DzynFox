@@ -182,11 +182,16 @@
 
 /* PAGE-SECTION: COUNT UP STATS */
 .statsSection {
+    background-color: var(--brand-black);
+}
+
+.statsSectionStatsContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 20vh;
     color: white;
-    background-color: var(--brand-black);
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* PAGE-SECTION: OUR CLIENTS */

@@ -1,0 +1,115 @@
+@media screen and (max-width: 1024px) {
+    .section-header {
+        font-size: 2rem !important;
+    }
+    .section-subheader {
+        font-size: 1.5rem !important;
+    }
+    .section-details {
+        font-size: 1rem !important;
+    }
+    header nav {
+        padding: 0 1rem !important;
+    }
+    header nav, header .logo {
+        height: 80px !important;
+    }
+    .expertiseTile .expertiseName{
+        font-size: 1.2rem !important;
+    }
+    .whyUsTilesContainer {
+        flex-wrap: wrap;
+    }
+    .whyUsTilesContainer .embedContainer {
+        width: 40% !important;
+    }
+    .statsSectionStatsContainer {
+        width: 90% !important;
+    }
+    .testimonialsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonialsContainer .TestimonialCard {
+        width: 90vw !important;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .CustomSelectContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .whyUsTilesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whyUsTilesContainer .embedContainer{
+        width: 70% !important;
+    }
+
+    .statsSectionStatsContainer {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* SECTION STYLES: HERO SECTION */
+    .HomeHeroMain {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 1rem;
+        min-height: calc(100vh - 80px);
+    }
+    .hero-img {
+        margin-bottom: 2rem;
+    }
+    .HomeHeroMain .hero-img img{
+        width: 80vw;
+    }
+    .hero-img::before{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .HomeHeroMain h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .HomeHeroMain p {
+        font-size: 1.3rem !important;
+    }
+    .link-button {
+        font-size: 1rem !important;
+    }
+    /* SECTION STYLES: WHY CHOOSE US */
+    .whyUsTilesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CustomSelectContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .whyUsTilesContainer .embedContainer {
+        width: 90% !important;
+    }
+    /* SECTION STYLES: OUR EXPERTISE */
+    .expertise-container {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .expertise-container .expertiseTile {
+        width: 90vw !important;
+        height: 90vw !important;
+    }
+}

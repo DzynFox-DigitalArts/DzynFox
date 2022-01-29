@@ -11,7 +11,7 @@
 .statGrp {
     display: flex;
     align-items: center;
-    margin-right: 10em;
+    /* margin-right: 10em; */
 }
 
 .statGrp:last-child {
