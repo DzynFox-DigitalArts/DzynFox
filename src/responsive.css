@@ -76,6 +76,19 @@
     .ContactForm-Form .inputGroup {
         margin-bottom: 10px !important;
     }
+
+    .FooterContent {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .FooterContent .companyDetails {
+        align-items: center !important;
+    }
+
+    .FooterContent .address {
+        text-align: center !important;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -141,6 +154,10 @@
         height: 90vw !important;
     }
     /* SECTION STYLES: CONTACT US FORM */
+    .ContactFormContent .ContactInfo {
+        margin: 1rem !important;
+    }
+    
     .ContactFormContent {
         display: flex;
         flex-direction: column;
