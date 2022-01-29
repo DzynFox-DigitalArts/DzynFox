@@ -51,6 +51,12 @@ const ContactForm = () => {
             pending: 'Sending Message',
             success: 'Message sent',
             error: 'An error occured while sending the message! Please try again later or contact us directly'
+            }).then(() => {
+                setFname('')
+                setLname('')
+                setEmail('')
+                setPhone('')
+                setMsg('')
             })
         }
     }
