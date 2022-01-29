@@ -42,3 +42,51 @@ header .logo {
 .nav-list-item:hover::after {
     transform: scaleX(1);
 }
+
+.MobileNavToggle {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+    min-width: 60px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.mobile-nav {
+    position: absolute;
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: red;
+    border-bottom-right-radius: 50%;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.mobile-nav .MobileNavToggle {
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.mobile-nav-list {
+    flex-direction: column;
+}
+
+.mobile-nav li {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.mobile-nav li a {
+    color: white;
+}
