@@ -80,7 +80,7 @@ const ContactForm = () => {
                         </div>
                         <div className="contactinfoGrp">
                             <i className="fas fa-envelope"></i>
-                            <a href="mailto:dzynfox@gmail.com">dzynfox@gmail.com</a>
+                            <a href="mailto:sales@dzynfox.com">sales@dzynfox.com</a>
                         </div>
                         {/* <div className="contactinfoGrp">
                             <i className="fas fa-map-marker-alt"></i>

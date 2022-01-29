@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
 
         sgMail.setApiKey('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')
         const msg = {
-          to: "dzynfox@gmail.com", // Change to your recipient
+          to: "sales@dzynfox.com", // Change to your recipient
           from: 'graphyyy.markall@gmail.com', // Change to your verified sender
           subject: `New Query from ${name}`,
           text: msgContent,
