@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .pageLoadAnimation {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    height: 100%;
+    width: calc(100vw - (100vw - 100%));
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -16,13 +16,13 @@
 
 .pageLoadAnimation .intro-text {
     width: 100%;
-    margin-left: -40px;
+    text-align: center;
 }
 
 .slider {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgb(27, 27, 27);
@@ -34,6 +34,8 @@
 
 .slider img {
     height: 90vh;
+    max-width: 90vw;
+    object-fit: contain;
 }
 
 .pageLoadAnimation h1 {

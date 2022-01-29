@@ -35,6 +35,10 @@
         width: 90vw !important;
         max-width: 500px;
     }
+
+    .pageLoadAnimation h1 {
+        font-size: 5vw !important;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -99,9 +103,18 @@
     .ContactFormContent .ContactInfo {
         flex: 4;
     }
+
+    .pageLoadAnimation h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.5rem !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .pageLoadAnimation h1 {
+        font-size: 2rem !important;
+    }
     /* SECTION STYLES: HERO SECTION */
     .HomeHeroMain {
         flex-direction: column-reverse;
