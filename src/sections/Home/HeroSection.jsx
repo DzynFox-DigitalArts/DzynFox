@@ -12,7 +12,6 @@ const HeroSection = () => {
                         <p>We have them in abundance</p>
                         <p className="redp">Have us to grow your business</p>
                     </div>
-                    <a href="#ExpertiseSection" className="link-button">Explore Our Expertise</a>
                 </div>
                 <div className="hero-img" data-aos="fade-up">
                     <img src={animation} alt="Creativity"/>

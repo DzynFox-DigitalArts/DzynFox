@@ -78,11 +78,17 @@ const PageLoadAnimation = () => {
         <div className="pageLoadAnimation" ref={coverRef}>
             <div className="intro-text">
                 <h1 className="hide">
+                    <span className="text">DzynFox</span>
+                </h1>
+                <h2 className="hide">
+                    <span className="text">A creative agency</span>
+                </h2>
+                <h3 className="hide">
                     <span className="text">Connecting New Dots in a</span>
-                </h1>
-                <h1 className="hide">
+                </h3>
+                <h3 className="hide">
                     <span className="text">Brand New Way</span>
-                </h1>
+                </h3>
             </div>
             {greetings
                 ?
