@@ -26,3 +26,17 @@
 .blog_blog img {
     width: 50vw;
 }
+
+@media screen and (max-width: 1024px) {
+    .blog {
+        width: 80vw;
+    }
+
+    .mainImg {
+        width: 80vw;
+    }
+
+    .blog_blog img {
+        width: 80vw;
+    }
+}
