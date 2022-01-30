@@ -67,3 +67,9 @@
     max-width: 1200px;
     gap: 0 2em;
 }
+
+@media screen and (max-width: 1024px) {
+    .AboutUsHeroMainContent, .AboutUsHeroContentSecondary {
+        flex-direction: column;
+    }
+}
