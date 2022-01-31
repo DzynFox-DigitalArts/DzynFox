@@ -3,7 +3,7 @@
 .pageLoadAnimation {
     height: 100%;
     width: calc(100vw - (100vw - 100%));
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -22,7 +22,7 @@
 .slider {
     height: 100%;
     width: 100vw;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background-color: rgb(27, 27, 27);
