@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 import OurExpertise from '../../sections/AllExpertise/OurExpertise';
 
 const AllExpertise = () => {
@@ -7,6 +8,7 @@ const AllExpertise = () => {
         <>
         <Navbar />
         <OurExpertise />
+        <QuickResponseForm />
         <Footer />
         </>
     )

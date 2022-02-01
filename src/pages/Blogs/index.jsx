@@ -6,6 +6,7 @@ import sanityClient from '../../sanity/client';
 import imageUrlBuilder from "@sanity/image-url";
 import BlogTile from '../../components/BlogTile';
 import Footer from '../../components/Footer'
+import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -63,6 +64,7 @@ const Blogs = () => {
                     }
                 </div>
             </main>
+            <QuickResponseForm />
             <Footer />
         </div>
     )
