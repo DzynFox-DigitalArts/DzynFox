@@ -1,13 +1,12 @@
 import './style.css'
 import { useState } from "react"
+import {ToastContainer, toast} from 'react-toastify'
 
 const QuickResponseForm = () => {
 
     const [fname, setFname] = useState('')
-    const [lname, setLname] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
-    const [msg, setMsg] = useState('')
 
     const validateEmail = (email) => {
         return String(email)
@@ -18,12 +17,62 @@ const QuickResponseForm = () => {
     };
 
     const sendMsg = e => {
-        console.log("Send Message")
+        e.preventDefault();
+        const messageContent = `Name: ${fname} \n Phone: ${phone} \n Email: ${email} \n Message: Quick Respone`
+        const postData = {
+            name: fname,
+            message: messageContent
+        }
+
+        if(fname === '' || email === '' || phone === '') {
+            toast.error('Please fill up all the fields', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else if (!validateEmail(email)) {
+            toast.error('Please enter a vailid email', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else {
+            toast.promise(fetch("https://dzynfox.com/.netlify/functions/notify", 
+            {method: 'POST', body: JSON.stringify(postData)}), {
+            pending: 'Sending Message',
+            success: 'Message sent',
+            error: 'An error occured while sending the message! Please try again later or contact us directly'
+            }).then(() => {
+                setFname('')
+                setEmail('')
+                setPhone('')
+            })
+        }
     }
 
     return (
         <div className="quickResponse">
+            <ToastContainer 
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
             <div className="quickResponseForm">
+                <h1 className="section-header">Contact Us</h1>
                 <div className="ContactFormContent">
                     <div className="ContactInfo">
                         <h2>Contact Information</h2>
