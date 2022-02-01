@@ -5,6 +5,7 @@ import {useParams} from 'react-router-dom'
 import HeroSection from '../../sections/ExpertiseDetailed/HeroSection'
 import Footer from '../../components/Footer'
 import Portfolio from '../../sections/ExpertiseDetailed/Portfolio'
+import QuickResponseForm from '../../components/QuickResponseForm.jsx'
 
 const ExpertiseDetailed = () => {
 
@@ -15,6 +16,7 @@ const ExpertiseDetailed = () => {
         <Navbar />
         <HeroSection name={name} />
         <Portfolio name={name} />
+        <QuickResponseForm />
         <Footer />
         </>
     )

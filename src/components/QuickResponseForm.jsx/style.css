@@ -1,0 +1,19 @@
+.quickResponseForm {
+    padding: 2rem 0;
+}
+
+.quickResponseForm .ContactFormContent {
+    min-height: 40vh;
+}
+
+.quickResponseForm .ContactForm-Form .fnameInputGrp{
+    grid-column: 1 / 3 !important;
+}
+
+.quickResponseForm .ContactInfo {
+    justify-content: center;
+}
+
+.quickResponseForm .ContactInfo h2 {
+    margin-bottom: 3rem;
+}
