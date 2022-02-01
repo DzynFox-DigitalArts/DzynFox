@@ -32,17 +32,12 @@ const WhyUs = () => {
                         selectedLanguage === 'hindi' ? 
                         <>
                             <YoutubeEmbed embedId="ZL6xb02QqRc" />
-                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
-                            <YoutubeEmbed embedId="ZL6xb02QqRc" />
+                            <YoutubeEmbed embedId="zFYtS3IlSp0" />
+                            <YoutubeEmbed embedId="T57n-vX0vpA" />
                             <YoutubeEmbed embedId="ZL6xb02QqRc" />
                         </>
                         :
-                        <>
-                            <YoutubeEmbed embedId="6stlCkUDG_s" />
-                            <YoutubeEmbed embedId="6stlCkUDG_s" />
-                            <YoutubeEmbed embedId="6stlCkUDG_s" />
-                            <YoutubeEmbed embedId="6stlCkUDG_s" />
-                        </>
+                        <p>We are currently working on this</p>
                     }
                 </div>
             </div>
