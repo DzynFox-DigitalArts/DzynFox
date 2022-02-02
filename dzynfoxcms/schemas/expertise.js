@@ -19,5 +19,17 @@ export default {
         type: 'array',
         of: [{type: 'image'}]
       },
+      {
+        name: 'pdfs',
+        title: 'PDF Portfolio Content',
+        type: 'array',
+        of: [{type: 'file'}]
+      },
+      {
+        name: 'videourl',
+        title: 'YouTube Video IDs',
+        type: 'array',
+        of: [{type: 'string'}]
+      }
     ],
 }  

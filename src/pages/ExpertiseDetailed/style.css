@@ -26,6 +26,16 @@
     padding: 3em;
 }
 
+.portfolio .embedContainer{
+    width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+    .portfolio .embedContainer{
+        padding: 0.5rem !important;
+    }   
+}
+
 /* .OurPortfolio p {
     text-align: center;
     margin: 0.5rem 0;

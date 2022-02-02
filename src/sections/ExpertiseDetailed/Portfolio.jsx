@@ -2,6 +2,7 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useEffect, useState} from "react";
 import sanityClient from '../../sanity/client'
 import imageUrlBuilder from "@sanity/image-url";
+import YoutubeEmbed from '../../components/YoutubeEmbed';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -11,17 +12,20 @@ function urlFor(source) {
 const OurPortfolio = ({name}) => {
 
     const [allImage, setAllImages] = useState([]);
+    const [videoUrls, setVideoUrls] = useState([]);
 
     useEffect(() => {
         sanityClient
           .fetch(
             `*[_type == "expertise" && title == $name][0]{
             title,
-            images
+            images,
+            videourl
         }`, {name}
           )
           .then((data) => {
-                setAllImages(data.images) 
+                setAllImages(data.images)
+                setVideoUrls(data.videourl)
             })
           .catch(console.error);
     }, []);
@@ -33,9 +37,11 @@ const OurPortfolio = ({name}) => {
                 <p>Take a look at what our highly capable teams ace at doing</p>
             </header>
             <div className="portfolio">
+                {allImage &&
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
                 >
+                    
                     <Masonry gutter="1rem">
                         {
                             allImage && 
@@ -44,7 +50,20 @@ const OurPortfolio = ({name}) => {
                             )) 
                         }
                     </Masonry>
-                </ResponsiveMasonry>
+                </ResponsiveMasonry>}
+                {videoUrls &&
+                <ResponsiveMasonry
+                    columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
+                >
+                    
+                    <Masonry gutter="1rem">
+                        {
+                            videoUrls && videoUrls.map((embedId, index) => (
+                                <YoutubeEmbed key={index} embedId={embedId}/>
+                            ))
+                        }
+                    </Masonry>
+                </ResponsiveMasonry>}
             </div>
         </main>
     )
