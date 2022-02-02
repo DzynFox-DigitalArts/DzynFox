@@ -69,7 +69,7 @@ const OurPortfolio = ({name}) => {
                 </ResponsiveMasonry>}
                 {videoUrls &&
                 <>
-                <p className="portfolio-subheader">Our Video Portfolio</p>
+                {name !== 'Animation' && <p className="portfolio-subheader">Our Video Portfolio</p>}
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
                 >
