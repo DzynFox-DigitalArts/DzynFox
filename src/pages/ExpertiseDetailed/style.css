@@ -63,13 +63,11 @@
 .pdfcontainer {
     position: relative;
     cursor: pointer;
+    width: 100%;
+    overflow: hidden;
 }
 
-.pdfcontainer span {
-    display: none;
-}
-
-.pdfcontainer canvas {
+.pdfcontainer img {
     width: 100% !important;
     height: auto !important;
 }

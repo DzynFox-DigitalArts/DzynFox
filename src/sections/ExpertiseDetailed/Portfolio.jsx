@@ -3,7 +3,6 @@ import { useEffect, useState} from "react";
 import sanityClient from '../../sanity/client'
 import imageUrlBuilder from "@sanity/image-url";
 import YoutubeEmbed from '../../components/YoutubeEmbed';
-import {Document, Page, pdfjs} from 'react-pdf'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -12,19 +11,10 @@ function urlFor(source) {
 
 const OurPortfolio = ({name}) => {
 
-    pdfjs.GlobalWorkerOptions.workerSrc = 
-    `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
     const [allImage, setAllImages] = useState([]);
     const [videoUrls, setVideoUrls] = useState([]);
     const [pdfs, setPdfs] = useState([]);
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-  
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-        setPageNumber(1);
-    }
 
     useEffect(() => {
         sanityClient
@@ -33,9 +23,17 @@ const OurPortfolio = ({name}) => {
             title,
             images,
             videourl,
-            pdfs[]{
-                asset->{
-                    url
+            pdfs[] -> {
+                name,
+                image {
+                    asset -> {
+                        url
+                    }
+                },
+                pdf {
+                    asset -> {
+                        url
+                    }
                 }
             }
         }`, {name}
@@ -90,13 +88,8 @@ const OurPortfolio = ({name}) => {
                     <Masonry gutter="1rem">
                         {
                             pdfs && pdfs.map((pdf, index) => (
-                                <div className="pdfcontainer" onClick={() => window.open(pdf.asset.url,"_blank")}>
-                                <Document className={"pdfdocument"}
-                                    file={pdf.asset.url}
-                                    onLoadSuccess={onDocumentLoadSuccess}
-                                    >
-                                    <Page className={"pdfpage"} pageNumber={pageNumber}/>
-                                </Document>
+                                <div key={index} className="pdfcontainer" onClick={() => window.open(pdf.pdf.asset.url,"_blank")}>
+                                    <img src={pdf.image.asset.url} alt={pdf.name} />
                                 </div>
                             ))
                         }

@@ -23,7 +23,10 @@ export default {
         name: 'pdfs',
         title: 'PDF Portfolio Content',
         type: 'array',
-        of: [{type: 'file'}]
+        of: [{
+          type: 'reference',
+          to: {type: 'pdffiles'}
+        }]
       },
       {
         name: 'videourl',
