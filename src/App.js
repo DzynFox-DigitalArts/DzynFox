@@ -9,6 +9,7 @@ import Blogs from './pages/Blogs';
 import BlogDetailed from './pages/BlogDetailed';
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>

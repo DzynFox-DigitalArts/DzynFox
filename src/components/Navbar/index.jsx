@@ -1,7 +1,7 @@
 import './style.css'
 import logo from '../../drawables/logo.png'
 import {useMediaQuery} from 'react-responsive'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
 
