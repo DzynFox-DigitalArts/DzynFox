@@ -7,6 +7,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlogTile from '../../components/BlogTile';
 import Footer from '../../components/Footer'
 import QuickResponseForm from '../../components/QuickResponseForm.jsx';
+import {analytics} from '../../firebase/firebase'
+import {logEvent} from 'firebase/analytics'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -17,6 +19,10 @@ const Blogs = () => {
 
     const [allBlogs, setAllBlogs] = useState([])
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        logEvent(analytics, 'all_blogs_page_visit')
+    }, [])
 
     useEffect(() => {
         sanityClient
