@@ -82,3 +82,8 @@
 .portfolio {
     margin: 2rem 0;
 }
+
+.portfolio-subheader {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}

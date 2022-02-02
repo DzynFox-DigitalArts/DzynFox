@@ -68,6 +68,8 @@ const OurPortfolio = ({name}) => {
                     </Masonry>
                 </ResponsiveMasonry>}
                 {videoUrls &&
+                <>
+                <p className="portfolio-subheader">Our Video Portfolio</p>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
                 >
@@ -79,8 +81,11 @@ const OurPortfolio = ({name}) => {
                             ))
                         }
                     </Masonry>
-                </ResponsiveMasonry>}
+                </ResponsiveMasonry>
+                </>}
                 {pdfs &&
+                <>
+                <p className="portfolio-subheader">Our PDF Portfolio</p>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
                 >
@@ -95,7 +100,9 @@ const OurPortfolio = ({name}) => {
                         }
 
                     </Masonry>
-                </ResponsiveMasonry>}
+                </ResponsiveMasonry>
+                </>
+                }
             </div>
         </main>
     )
