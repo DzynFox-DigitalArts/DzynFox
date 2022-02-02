@@ -36,17 +36,7 @@
     }   
 }
 
-.pdfobject{
-    background-color: white;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-}
-
-.pdfobject::after {
+.pdfcontainer::after {
     content: "Open PDF";
     position: absolute;
     top: 0;
@@ -54,8 +44,9 @@
     height: 100%;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0,0.6);
+    background-color: rgba(0, 0, 0,0.9);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
@@ -65,12 +56,22 @@
     transition: all ease 0.3s;
 }
 
-.pdfobject:hover::after {
+.pdfcontainer:hover::after {
     transform: scaleY(1);
 }
 
-.pdfobject i {
-    font-size: 5rem;
+.pdfcontainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.pdfcontainer span {
+    display: none;
+}
+
+.pdfcontainer canvas {
+    width: 100% !important;
+    height: auto !important;
 }
 
 /* .OurPortfolio p {
