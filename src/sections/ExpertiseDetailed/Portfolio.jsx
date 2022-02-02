@@ -13,6 +13,7 @@ const OurPortfolio = ({name}) => {
 
     const [allImage, setAllImages] = useState([]);
     const [videoUrls, setVideoUrls] = useState([]);
+    const [pdfs, setPdfs] = useState([]);
 
     useEffect(() => {
         sanityClient
@@ -20,12 +21,18 @@ const OurPortfolio = ({name}) => {
             `*[_type == "expertise" && title == $name][0]{
             title,
             images,
-            videourl
+            videourl,
+            pdfs[]{
+                asset->{
+                    url
+                }
+            }
         }`, {name}
           )
           .then((data) => {
                 setAllImages(data.images)
                 setVideoUrls(data.videourl)
+                setPdfs(data.pdfs)
             })
           .catch(console.error);
     }, []);
@@ -60,6 +67,21 @@ const OurPortfolio = ({name}) => {
                         {
                             videoUrls && videoUrls.map((embedId, index) => (
                                 <YoutubeEmbed key={index} embedId={embedId}/>
+                            ))
+                        }
+                    </Masonry>
+                </ResponsiveMasonry>}
+                {pdfs &&
+                <ResponsiveMasonry
+                    columnsCountBreakPoints={{350: 1, 750: 3, 900: 4}}
+                >
+                    
+                    <Masonry gutter="1rem">
+                        {
+                            pdfs && pdfs.map((pdf, index) => (
+                                <div className="pdfobject" onClick={() => console.log(pdf.asset.url)}>
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
                             ))
                         }
                     </Masonry>
