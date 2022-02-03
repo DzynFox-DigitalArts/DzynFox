@@ -17,15 +17,15 @@ const OurClients = () => {
             <h1 className='section-header'>Our Clients</h1>
             <div className="clients" data-aos="zoom-in">
                 <Marquee pauseOnHover={true} gradient={false} speed={100}>
-                    <img src={ClientH} alt="" className='clientLogo'/>
-                    <img src={ClientK} alt="" className='clientLogo'/>
-                    <img src={ClientL} alt="" className='clientLogo'/>
-                    <img src={ClientM} alt="" className='clientLogo'/>
-                    <img src={ClientO} alt="" className='clientLogo'/>
-                    <img src={ClientP} alt="" className='clientLogo'/>
-                    <img src={ClientQ} alt="" className='clientLogo'/>
-                    <img src={ClientR} alt="" className='clientLogo'/>
-                    <img src={ClientS} alt="" className='clientLogo'/>
+                    <img src={ClientH} alt="client logo" className='clientLogo'/>
+                    <img src={ClientK} alt="client logo" className='clientLogo'/>
+                    <img src={ClientL} alt="client logo" className='clientLogo'/>
+                    <img src={ClientM} alt="client logo" className='clientLogo'/>
+                    <img src={ClientO} alt="client logo" className='clientLogo'/>
+                    <img src={ClientP} alt="client logo" className='clientLogo'/>
+                    <img src={ClientQ} alt="client logo" className='clientLogo'/>
+                    <img src={ClientR} alt="client logo" className='clientLogo'/>
+                    <img src={ClientS} alt="client logo" className='clientLogo'/>
                 </Marquee>
             </div>
         </div>

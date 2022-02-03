@@ -117,15 +117,16 @@
 
     .HomeHeroMain {
         flex-direction: column-reverse;
+        justify-content: center !important;
         min-height: calc(100vh - 80px);
         align-items: center;
         padding: 0 1rem;
     }
-    .hero-img {
+    .hero-animation {
         margin-bottom: 2rem;
     }
-    .HomeHeroMain .hero-img img{
-        width: 80vw;
+    .HomeHeroMain .hero-animation video{
+        width: 70vw;
     }
     .hero-img::before{
         height: 100% !important;
