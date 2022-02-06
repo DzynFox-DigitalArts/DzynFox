@@ -9,7 +9,7 @@ const HeroSection = () => {
                 <img src={BabyFox} alt="Men Discussing Idea" />
                 <div className="AboutUsHeroContent">
                     <p>
-                    We are <span className='aboutus-subheader'>DzynFox Digital Arts LLP</span>. A company formed under the MarkAll group of companies. We are the design hands of <span className='aboutus-subheader'>MarkAll - Marketing All Out</span>, a full-service marketing agency.
+                    We are <span className='aboutus-subheader'>DzynFox Visual Communications LLP</span>. A company formed under the MarkAll group of companies. We are the design hands of <span className='aboutus-subheader'>MarkAll - Marketing All Out</span>, a full-service marketing agency.
                     <span className="spacer"></span>
                         <span className="aboutus-subheader">Our mission</span> is to offer creative services and imaginative solutions to strengthen every creative opportunity. We cultivate both the business and its clients through successful visual solutions and do so with professionalism, enthusiasm and dedication.
                     <span className="spacer"></span> 
