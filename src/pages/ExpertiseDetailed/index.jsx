@@ -11,6 +11,7 @@ import {useEffect} from 'react';
 
 import {analytics} from '../../firebase/firebase'
 import {logEvent} from 'firebase/analytics'
+import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise'
 
 const ExpertiseDetailed = () => {
 
@@ -25,6 +26,7 @@ const ExpertiseDetailed = () => {
         <Navbar />
         <HeroSection name={name} />
         <Portfolio name={name} />
+        <JumpToExpertise name={name}/>
         <QuickResponseForm />
         <Footer />
         </>
