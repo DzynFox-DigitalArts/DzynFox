@@ -7,6 +7,7 @@ import {useEffect} from 'react';
 
 import {analytics} from '../../firebase/firebase'
 import {logEvent} from 'firebase/analytics'
+import ScrollToTopBtn from '../../components/ScrollToTopBtn';
 
 const AllExpertise = () => {
 
@@ -20,6 +21,7 @@ const AllExpertise = () => {
         <OurExpertise />
         <QuickResponseForm />
         <Footer />
+        <ScrollToTopBtn />
         </>
     )
 }
