@@ -2,6 +2,9 @@ import { useState } from "react"
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
+import {collection, addDoc} from 'firebase/firestore/lite'
+import {db} from '../../firebase/firebase'
+
 const ContactForm = () => {
     const [fname, setFname] = useState('')
     const [lname, setLname] = useState('')
@@ -51,6 +54,26 @@ const ContactForm = () => {
             pending: 'Sending Message',
             success: 'Message sent',
             error: 'An error occured while sending the message! Please try again later or contact us directly'
+            }).then(() => {
+                setFname('')
+                setLname('')
+                setEmail('')
+                setPhone('')
+                setMsg('')
+            })
+
+            toast.promise(
+                addDoc(collection(db,'queries'), {
+                    firstname: fname,
+                    lastname: lname,
+                    phone: phone,
+                    email: email,
+                    message: msg
+                }), 
+            {
+            pending: 'Adding details to support queue',
+            success: 'Added details to support queue',
+            error: 'An error occured while adding details to support queue Please try again later or contact us directly'
             }).then(() => {
                 setFname('')
                 setLname('')

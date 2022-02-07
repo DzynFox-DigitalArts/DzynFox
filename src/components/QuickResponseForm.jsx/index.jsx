@@ -1,6 +1,8 @@
 import './style.css'
 import { useState } from "react"
 import {ToastContainer, toast} from 'react-toastify'
+import {collection, addDoc} from 'firebase/firestore/lite'
+import {db} from '../../firebase/firebase'
 
 const QuickResponseForm = () => {
 
@@ -55,6 +57,24 @@ const QuickResponseForm = () => {
                 setEmail('')
                 setPhone('')
             })
+
+            toast.promise(
+                addDoc(collection(db,'queries'), {
+                    name: fname,
+                    phone: phone,
+                    email: email,
+                    message: 'Message From Quick Response Form'
+                }), 
+            {
+            pending: 'Adding details to support queue',
+            success: 'Added details to support queue',
+            error: 'An error occured while adding details to support queue Please try again later or contact us directly'
+            }).then(() => {
+                setFname('')
+                setEmail('')
+                setPhone('')
+            })
+
         }
     }
 
