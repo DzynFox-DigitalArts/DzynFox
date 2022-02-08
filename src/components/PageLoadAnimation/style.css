@@ -8,7 +8,7 @@
     left: 0;
     display: flex;
     align-items: center;
-    background-color: var(--brand-red);
+    background-color: white;
     z-index: 10;
     overflow: hidden;
     text-align: center;
@@ -17,6 +17,7 @@
 .pageLoadAnimation .intro-text {
     width: 100%;
     text-align: center;
+    color: red;
 }
 
 .slider {
@@ -59,7 +60,7 @@
 }
 
 .hide {
-    background: var(--brand-red);
+    background: white;
     overflow: hidden;
 }
 
