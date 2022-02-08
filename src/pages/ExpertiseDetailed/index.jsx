@@ -8,6 +8,7 @@ import Portfolio from '../../sections/ExpertiseDetailed/Portfolio'
 import QuickResponseForm from '../../components/QuickResponseForm.jsx'
 
 import {useEffect} from 'react';
+import {Helmet} from 'react-helmet'
 
 import {analytics} from '../../firebase/firebase'
 import {logEvent} from 'firebase/analytics'
@@ -23,6 +24,9 @@ const ExpertiseDetailed = () => {
 
     return(
         <>
+        <Helmet>
+            <title>{name} - DzynFox</title>
+        </Helmet>
         <Navbar />
         <HeroSection name={name} />
         <Portfolio name={name} />

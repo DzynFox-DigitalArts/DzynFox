@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from '../../sanity/client'
 import imageUrlBuilder from "@sanity/image-url";
+import { Helmet } from 'react-helmet';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -39,6 +40,9 @@ const Blog = ({slug}) => {
         <div className="blogContainerMain">
             {postData && 
             <>
+            <Helmet>
+            <title>{postData.title} - DzynFox</title>
+            </Helmet>
             <div className='blog'>
             <header>
                 <h1 className='blogName'>{postData.title}</h1>

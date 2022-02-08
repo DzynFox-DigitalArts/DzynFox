@@ -1,4 +1,5 @@
 import './style.css'
+import {Helmet} from 'react-helmet'
 import {ClipLoader} from 'react-spinners';
 import {useState, useEffect} from 'react'
 import Navbar from '../../components/Navbar';
@@ -47,6 +48,9 @@ const Blogs = () => {
 
     return(
         <div className='allBlogsContainer'>
+            <Helmet>
+                <title>Our Featured Blogs - DzynFox</title>
+            </Helmet>
             <Navbar />
             <main className="allBlogs">
                 <h1 className="section-header">
