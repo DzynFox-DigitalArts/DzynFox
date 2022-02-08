@@ -10,13 +10,14 @@ import ContactForm from '../../sections/Home/ContactForm';
 import OurClients from '../../sections/Home/OurClients';
 import OtherBrands from '../../sections/Home/OtherBrands';
 import Footer from '../../components/Footer';
-import {JsonLd} from 'react-schemaorg'
+import {helmetJsonLdProp} from 'react-schemaorg'
+import { Helmet } from 'react-helmet'; 
 
 const Home = () => {
     return(
         <>
-            <JsonLd 
-                item={
+            <Helmet script={[
+                helmetJsonLdProp(
                     {
                         "@context": "https://schema.org",
                         "@type": "Organization",
@@ -39,8 +40,10 @@ const Home = () => {
                           "https://dzynfox.com"
                         ]
                     }
-                }
-            />
+                )
+            ]}>
+
+            </Helmet>
             <Navbar />
             <HeroSection />
             <WhyUs />
