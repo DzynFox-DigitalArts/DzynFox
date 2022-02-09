@@ -7,6 +7,7 @@ import AllExpertise from './pages/AllExpertise';
 import ExpertiseDetailed from './pages/ExpertiseDetailed';
 import Blogs from './pages/Blogs';
 import BlogDetailed from './pages/BlogDetailed';
+import HBD from './pages/HBD';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="expertise/:name" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
+          <Route path="hbd" element={<HBD />}/>
         </Routes>
       </BrowserRouter>
     </div>
