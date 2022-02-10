@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Confetti from 'react-confetti'
 import './style.css'
 
 const wishes = [
@@ -33,6 +34,10 @@ const HBD = () => {
 
     return(
         <div className="hbd">
+            <Confetti 
+                height={300}
+                width={300}
+            />
             <pre>{wishes[index]}</pre>
             <div className="next-wish">
                 <p>We have more wishes for you</p>
