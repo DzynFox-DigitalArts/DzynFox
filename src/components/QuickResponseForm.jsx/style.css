@@ -17,3 +17,7 @@
 .quickResponseForm .ContactInfo h2 {
     margin-bottom: 3rem;
 }
+
+.quickResponse .ContactForm-Form {
+    min-height: 300px;
+}
