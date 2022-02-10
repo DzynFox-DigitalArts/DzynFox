@@ -144,7 +144,7 @@ const ContactForm = () => {
                         <label htmlFor="phone" className="inputLbl">Phone</label>
                     </div>
                     <div className="inputGroup msgBoxInputGrp">
-                        <textarea name="msg" className="msgBox" cols="30" rows="10" value={msg} onChange={e => setMsg(e.target.value)}></textarea>
+                        <textarea name="msg" className="msgBox" cols="30" rows="3" value={msg} onChange={e => setMsg(e.target.value)}></textarea>
                         <label htmlFor="msg" className="inputLbl">Message</label>
                     </div>
                     <button type="submit" className="sendBtn" onClick={e => sendMsg(e)}>Send Message</button>
