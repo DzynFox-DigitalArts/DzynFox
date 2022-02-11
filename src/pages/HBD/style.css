@@ -1,0 +1,43 @@
+.hbdBgImageFlag {
+    position: absolute;
+    width: 100vw;
+    object-fit: contain;
+    max-height: 300px;
+    top: -50px;
+    z-index: -10;
+}
+
+.hbdBgImage{
+    position: fixed;
+    width: 100vw;
+    top: 120%;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.hbd {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-wish {
+    width: 100%;
+}
+
+.wish-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content !important;
+}
+
+.wish-container img {
+    mix-blend-mode: multiply;
+    height: 40vh;
+    object-fit: contain;
+}
