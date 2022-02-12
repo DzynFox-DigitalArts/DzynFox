@@ -2,10 +2,10 @@ import { useState, useRef, useEffect } from 'react'
 import Confetti from 'react-confetti'
 import './style.css'
 import Flags from '../../drawables/separated/Flags.png'
-import fast from '../../drawables/separated/fast.png'
-import slow from '../../drawables/separated/slow.png'
 import Cake from '../../drawables/separated/Cake.png'
+import Balloons from '../../drawables/separated/balloons.mp4'
 import { gsap } from 'gsap'
+import {Helmet} from 'react-helmet'
 
 
 const wishes = [
@@ -44,18 +44,18 @@ const HBD = () => {
     useEffect(() => {
         tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
         .to(selector('.fast'), {
-            y: '-200%',
-            duration: 3,
-            delay: 1,
+            y: '-180vh',
+            duration: 5,
+            repeat: -1
         })
     }, [])
 
     useEffect(() => {
         tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
         .to(selector('.slow'), {
-            y: '-200%',
+            y: '-180vh',
             duration: 4,
-            delay: 1,
+            repeat: -1
         })
     })
 
@@ -70,26 +70,39 @@ const HBD = () => {
 
     return(
         <div className="hbd" ref={coverRef}>
-            <img src={Flags} alt="Flags" className='hbdBgImageFlag'/>
-            <img src={fast} alt="Flags" className='hbdBgImage fast'/>
-            <img src={slow} alt="Flags" className='hbdBgImage slow'/>
+            <Helmet>
+                <title>Happy Birthday!</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
+            </Helmet>
             <Confetti 
                 height={window.innerHeight}
                 width={window.innerWidth}
             />
+            <video autoPlay loop muted className='balloons leftballoons'>
+                <source src={Balloons} />
+            </video>
+            <video autoPlay loop muted className='balloons rightballoons'>
+                <source src={Balloons} />
+            </video>
             <div className="wish-container">
+                <img src={Flags} alt="Flags" className='hbdBgImageFlag'/>
                 <img src={Cake} alt="Flags" className='hbdBgImageCake'/>
                 <div className="intro-text">
                     <h1 className="hide">
                         <span className="text"><pre>{wishes[index]}</pre></span>
                     </h1>
                 </div>
-            <div className="next-wish">
-                <p>We have more wishes for you</p>
-                <button onClick={showNextMsg}>See Next</button>
-            </div>
+                <div className="next-wish">
+                    <button onClick={showNextMsg}>More Wishes</button>
+                </div>
             </div>
         </div>
+    )
+}
+
+const wishOne = () => {
+    return (
+        null
     )
 }
 
