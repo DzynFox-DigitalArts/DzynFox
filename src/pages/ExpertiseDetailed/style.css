@@ -19,6 +19,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.ourFeatures .features p {
+    background-color: #f4f6f8;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0;
 }
 
 .OurPortfolio {

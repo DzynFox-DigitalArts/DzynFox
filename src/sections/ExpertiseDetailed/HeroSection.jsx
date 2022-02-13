@@ -7,14 +7,16 @@ const HeroSection = ({name}) => {
         <main className="expertiseDetailedHero">
             <h2 className="section-subheader">Lets improve your branding through</h2>
             <h1 className="section-header">{name}</h1>
-            <p>{expertiseDetails[name] !== undefined ? expertiseDetails[name] : "We are currently working on this"}</p>
+            <p>{expertiseDetails[name].desc !== undefined ? expertiseDetails[name].desc : "We are currently working on this"}</p>
             <div className="ourFeatures">
                 <h1 className="section-subheader">You won't be disappointed! <br /> Your project is in <span className="accent-text">our hands</span></h1>
+                {expertiseDetails[name].subServices && 
                 <div className="features">
-                    <WhyUsTile faIconName={'fas fa-swatchbook'} name={"Best in Class Design"} />
-                    <WhyUsTile faIconName={'fas fa-clock'} name={"On Time Delivery"} />
-                    <WhyUsTile faIconName={'fas fa-user'} name={"Customer-Centric Support Team"} />
+                    {expertiseDetails[name].subServices.map((service, index) => (
+                        <p key={index}>{service}</p>
+                    ))}
                 </div>
+                }
             </div>
         </main>
     )
