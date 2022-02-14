@@ -65,7 +65,6 @@ export default {
         desc: "A video presentation is a popular form of multimedia presentation with a duration of several seconds or minutes that shows the benefits of a product, service, or any idea with the help of interesting graphic images, concise text, and appropriate narration. At DzynFox, We help you to create your own video presentation which will be a great scope to grow & spread your business to a whole new level, with our created videos you will connect & promote your branding. So, trust us, We're the Best in this field.",
         subServices: [
             '2D Animation',
-            // '3D Animation', HAS A STAR ON IT ASK WHY,
             'Youtube Video',
             'Instagram Reels',
             'Social Media Videos',
@@ -100,6 +99,34 @@ export default {
     },
     "Branding" : {
         desc: `Brand advertising is a form of advertising which helps establish connections and build strong, long-term relationships with consumers over time. DzynFox helps with designing what you need to spread your business & attract customers. Trust us, We're one of a kind.`,
+        subServices: [
+            'Business Cards',
+            'Letterhead',
+            'Envelopes',
+            'Signage',
+            'Lanyard',
+            'Soft Coasters',
+            'Table Mats',
+            'Danglers',
+            'Wobblers',
+            'Standees',
+            'Mouse Pads',
+            'Tent Cards',
+            'Bookmarks',
+            'T-Shirts',
+            'Caps',
+            'Pens',
+            'Mugs',
+            'Keychains',
+            'Thankyou Cards',
+            'Stickers',
+            'Standees',
+            'Canopy',
+            'Umbrella',
+            'Banners',
+            'Posters',
+            'Billboards'
+        ]
     }
     ,
     // "Logo Design" : "Logo design is a branding and marketing tool that can be used to signify a business. Put simply; your logo represents your business brand. It’s something simple that, as you build brand loyalty, your customers come to trust and recognise. DzynFox is the strongest bridge to build that trust & support with your customers by designing logos for you. Trust us, we're the Best in this field.",
