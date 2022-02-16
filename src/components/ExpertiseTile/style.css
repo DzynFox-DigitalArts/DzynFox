@@ -3,10 +3,8 @@
     max-height: 300px;
     min-width: 180px;
     min-height: 180px;
-    /* width: 300px; */
-    /* height: 300px; */
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     padding: 1rem;
     padding-top: 30px;
     display: flex;
@@ -87,8 +85,8 @@
 }
 
 .expertise-icon {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
     background-color: white;
     border: 2px solid var(--brand-red);
@@ -103,7 +101,7 @@
 }
 
 .expertise-icon i {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .expertiseLink {
