@@ -54,13 +54,13 @@ export default {
             'Directory and Contact Pages'
         ]
     },
-    "Photo Editing" : {
-        desc: "Photo editing or post-processing is what makes your photographs flawless. DzynFox, We're experts in this. Let's just join hands, so that we can help you with our creative ideas. Believe it or not, We're Best in this field.",
-    }
-    ,
-    "Video Editing" : {
-        desc: "We are working on this",
-    },
+    // "Photo Editing" : {
+    //     desc: "Photo editing or post-processing is what makes your photographs flawless. DzynFox, We're experts in this. Let's just join hands, so that we can help you with our creative ideas. Believe it or not, We're Best in this field.",
+    // }
+    // ,
+    // "Video Editing" : {
+    //     desc: "We are working on this",
+    // },
     "Video Presentation" : {
         desc: "A video presentation is a popular form of multimedia presentation with a duration of several seconds or minutes that shows the benefits of a product, service, or any idea with the help of interesting graphic images, concise text, and appropriate narration. At DzynFox, We help you to create your own video presentation which will be a great scope to grow & spread your business to a whole new level, with our created videos you will connect & promote your branding. So, trust us, We're the Best in this field.",
         subServices: [
