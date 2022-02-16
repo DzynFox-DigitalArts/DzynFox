@@ -94,7 +94,7 @@ export default {
             'Infographs'
         ]
     },
-    "Brand Identity and Strategy" : {
+    "Branding Strategy" : {
         desc: `A branding strategy (a.k.a. brand development strategy) is the long-term plan to achieve a series of
         long-term goals that ultimately result in the identification and preference of your brand by
         consumers. A successful branding strategy encompasses the brand's mission, its promises to its
@@ -137,7 +137,7 @@ export default {
         5. Co-branding
 
         The best practices to building your brand
-        
+
         1. Perfect use of visual content
         2. Humanize your brand
         3. Keep the conversation going

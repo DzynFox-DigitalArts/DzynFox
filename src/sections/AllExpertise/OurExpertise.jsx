@@ -9,7 +9,7 @@ const OurExpertise = () => {
             <div className="expertise-container">
 
                 <ExpertiseTile name={"Graphic Design"} faIconName={"fas fa-swatchbook"} />
-                <ExpertiseTile name={"Brand Identity and Strategy"} faIconName={"fas fa-laptop-code"} />
+                <ExpertiseTile name={"Branding Strategy"} faIconName={"fas fa-laptop-code"} />
                 <ExpertiseTile name={"Branding"} faIconName={"fas fa-blog"} />
                 <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} />
                 <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} />
