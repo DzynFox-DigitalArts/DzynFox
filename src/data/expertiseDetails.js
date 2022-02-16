@@ -74,7 +74,7 @@ export default {
             'Tutorial Video'
         ]
     },
-    "Voice Over / Narrations" : {
+    "Voice Overs / Narrations" : {
         desc: 'We are working on this'
     },
     "Creative Writing" : {
