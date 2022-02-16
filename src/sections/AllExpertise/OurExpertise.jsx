@@ -9,19 +9,19 @@ const OurExpertise = () => {
             <div className="expertise-container">
 
                 <ExpertiseTile name={"Graphic Design"} faIconName={"fas fa-swatchbook"} />
+                <ExpertiseTile name={"Brand Identity and Strategy"} faIconName={"fas fa-laptop-code"} />
+                <ExpertiseTile name={"Branding"} faIconName={"fas fa-blog"} />
                 <ExpertiseTile name={"Illustration"} faIconName={"fas fa-pen-nib"} />
                 <ExpertiseTile name={"Animation"} faIconName={"fas fa-walking"} />
-                <ExpertiseTile name={"Web Design"} faIconName={"fas fa-laptop-code"} />
 
-                <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} />
-                <ExpertiseTile name={"Video Editing"} faIconName={"fas fa-laptop-code"} />
                 <ExpertiseTile name={"Video Presentation"} faIconName={"fas fa-video"} />
                 <ExpertiseTile name={"Voice Overs / Narrations"} faIconName={"fas fa-laptop-code"} />
-                
+                <ExpertiseTile name={"Web Design"} faIconName={"fas fa-laptop-code"} />
                 <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} />
                 <ExpertiseTile name={"Presentations"} faIconName={"fas fa-tv"} />
-                <ExpertiseTile name={"Brand Identity"} faIconName={"fas fa-laptop-code"} />
-                <ExpertiseTile name={"Branding"} faIconName={"fas fa-blog"} />
+
+                {/* <ExpertiseTile name={"Photo Editing"} faIconName={"fas fa-images"} />
+                <ExpertiseTile name={"Video Editing"} faIconName={"fas fa-laptop-code"} /> */}
             </div>
         </section>
     )

@@ -95,7 +95,14 @@ export default {
         ]
     },
     "Brand Identity and Strategy" : {
-        desc: 'We are working on this',
+        desc: `A branding strategy (a.k.a. brand development strategy) is the long-term plan to achieve a series of
+        long-term goals that ultimately result in the identification and preference of your brand by
+        consumers. A successful branding strategy encompasses the brand's mission, its promises to its
+        customers, and how these are communicated.
+        Often misconceived, a branding strategy is not the sum of your logo, colour palette, or website;
+        though these creative elements are integral to a successful branding strategy. A branding strategy
+        revolves around all the intangible elements that over time drive brand awareness, brand equity, and
+        brand sentiment.`,
     },
     "Branding" : {
         desc: `Brand advertising is a form of advertising which helps establish connections and build strong, long-term relationships with consumers over time. DzynFox helps with designing what you need to spread your business & attract customers. Trust us, We're one of a kind.`,
