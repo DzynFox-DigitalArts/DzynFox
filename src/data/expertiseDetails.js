@@ -99,10 +99,49 @@ export default {
         long-term goals that ultimately result in the identification and preference of your brand by
         consumers. A successful branding strategy encompasses the brand's mission, its promises to its
         customers, and how these are communicated.
+
         Often misconceived, a branding strategy is not the sum of your logo, colour palette, or website;
         though these creative elements are integral to a successful branding strategy. A branding strategy
         revolves around all the intangible elements that over time drive brand awareness, brand equity, and
-        brand sentiment.`,
+        brand sentiment.
+        
+        Our steps for brand development strategy are:
+
+        1. Considering your overall business strategy
+        2. Identify your target clients
+        3. Research your target client group
+        4. Develop your brand positioning
+        5. Develop your messaging strategy
+        6. Determine the type of images to be used
+        7. Develop your name, logo & tagline
+        8. Develop your content marketing strategy
+        9. Develop your website
+        10. Build your marketing toolkit
+        11. Implement, track & adjust
+
+        Components of a comprehensive branding strategy
+
+        1. Purpose – functional & intentional
+        2. Consistency
+        3. Emotion
+        4. Flexibility
+        5. Loyalty
+        6. Competitive awareness
+
+        Types of branding
+
+        1. Personal branding
+        2. Product branding
+        3. Service branding
+        4. Corporate branding
+        5. Co-branding
+
+        The best practices to building your brand
+        
+        1. Perfect use of visual content
+        2. Humanize your brand
+        3. Keep the conversation going
+        `,
     },
     "Branding" : {
         desc: `Brand advertising is a form of advertising which helps establish connections and build strong, long-term relationships with consumers over time. DzynFox helps with designing what you need to spread your business & attract customers. Trust us, We're one of a kind.`,
