@@ -12,9 +12,9 @@ function urlFor(source) {
 const OurPortfolio = ({name}) => {
 
 
-    const [allImage, setAllImages] = useState([]);
-    const [videoUrls, setVideoUrls] = useState([]);
-    const [pdfs, setPdfs] = useState([]);
+    const [allImage, setAllImages] = useState(undefined);
+    const [videoUrls, setVideoUrls] = useState(undefined);
+    const [pdfs, setPdfs] = useState(undefined);
 
     useEffect(() => {
         sanityClient
