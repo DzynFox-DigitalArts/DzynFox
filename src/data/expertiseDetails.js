@@ -1,5 +1,6 @@
 export default {
-    "Graphic Design": {
+    "graphic-design": {
+        name: 'Graphic Design',
         desc: "Graphic design is the art or profession of visual communication that combines images, words, and ideas to convey information to an audience, especially to produce a specific effect. In other words, graphic design is communication design; It’s a way of conveying ideas through visuals and design. At DzynFox we are the expert of these. Come & join hands with us, we shall bring success to your business together. Believe it or not We're the Best in this field.",
         subServices: [
             'Social Media Ads',
@@ -12,7 +13,7 @@ export default {
             'UI / UX Design'
         ]
     },
-    "Illustration" : {
+    "illustration" : {
         desc: "An illustration is a visualization or a depiction made by an artist, such as a drawing, sketch, painting, photograph, or other kind of image of things seen, remembered or imagined, using a graphical representation. At DzynFox, We have perfect visualization that you require. We will see through your eyes colors, & paint it with our creativity & present before a wonderful creation that will awestruck you. Believe it or not, We're the best in this field.",
         subServices: [
             'T-Shirt Design',
@@ -25,7 +26,7 @@ export default {
             'Concept Art'
         ]
     },
-    "Animation" : {
+    "animation" : {
         desc: "Animation is a method in which figures are manipulated to appear as moving images. At DzynFox, with the experience of 10 years, we can provide you with brilliant animation which will be fruitful for your  endeavors.",
         subServices: [
             'Title Sequences and End Credits',
@@ -41,7 +42,7 @@ export default {
             'GIFs'
         ]
     },
-    "Web Design" : {
+    "web-design" : {
         desc: "Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website's overall functionality. Web design also includes web apps, mobile apps, and user interface design. That's why We, DzynFox is here to help you out in every aspect. Connect with us we shall take you to a whole new aspects of Web Designing, where Designing will be fun. Trust us We're the best in this field.",
         subServices: [
             'Homepage',
@@ -61,7 +62,7 @@ export default {
     // "Video Editing" : {
     //     desc: "We are working on this",
     // },
-    "Video Presentation" : {
+    "video-presentation" : {
         desc: "A video presentation is a popular form of multimedia presentation with a duration of several seconds or minutes that shows the benefits of a product, service, or any idea with the help of interesting graphic images, concise text, and appropriate narration. At DzynFox, We help you to create your own video presentation which will be a great scope to grow & spread your business to a whole new level, with our created videos you will connect & promote your branding. So, trust us, We're the Best in this field.",
         subServices: [
             '2D Animation',
@@ -74,10 +75,10 @@ export default {
             'Tutorial Video'
         ]
     },
-    "Voice Overs / Narrations" : {
+    "voice-overs-narrations" : {
         desc: 'We are working on this'
     },
-    "Creative Writing" : {
+    "creative-writing" : {
         desc: 'Creative writing is a form of writing that encompasses a number of different genres and styles outside the more formal scope of technical writing or academic writing. Creative writing focuses on elements such as character development, narrative, and plot, infusing its structure with imagination and story. DzynFox is best in this field, We can help you with a wide variety of thoughts & ideas which will put magic in your respective genre.',
         subServices: [
             'Copywriting',
@@ -85,7 +86,7 @@ export default {
             'Adaptations'
         ]
     },
-    "Presentations" : {
+    "presentations" : {
         desc: "DzynFox, as a Creative Agency can help you with a well-designed presentation which will be able to tell a story, influence people and make information easier to digest and remember. Trust us, We're the best.",
         subServices: [
             'Powerpoint Presentation',
@@ -94,7 +95,7 @@ export default {
             'Infographs'
         ]
     },
-    "Branding Strategy" : {
+    "branding-strategy" : {
         desc: `A branding strategy (a.k.a. brand development strategy) is the long-term plan to achieve a series of
         long-term goals that ultimately result in the identification and preference of your brand by
         consumers. A successful branding strategy encompasses the brand's mission, its promises to its
@@ -143,7 +144,7 @@ export default {
         3. Keep the conversation going
         `,
     },
-    "Branding" : {
+    "branding" : {
         desc: `Brand advertising is a form of advertising which helps establish connections and build strong, long-term relationships with consumers over time. DzynFox helps with designing what you need to spread your business & attract customers. Trust us, We're one of a kind.`,
         subServices: [
             'Business Cards',

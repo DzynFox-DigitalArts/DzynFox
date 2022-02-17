@@ -6,14 +6,11 @@ import {lazy, Suspense} from 'react'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home'
-
 import Loading from './components/Loading';
-import VAS from './pages/VAS';
 
-// const Home = lazy(() => import('./pages/Home'));
 const AboutUs = lazy(() => import('./pages/AboutUs'))
-// const AllExpertise = lazy(() => import('./pages/AllExpertise'))
 const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
+const VAS = lazy(() => import('./pages/VAS'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogDetailed = lazy(() => import('./pages/BlogDetailed'))
 const HBD = lazy(() => import('./pages/HBD'))
@@ -28,9 +25,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="about-us" element={<AboutUs />}/>
-          {/* <Route path="expertise" element={<AllExpertise />}/> */}
           <Route path="vas" element={<VAS />}/>
-          <Route path="expertise/:name" element={<ExpertiseDetailed />}/>
+          <Route path="expertise/:slug" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
           <Route path="hbd" element={<HBD />}/>

@@ -2,6 +2,7 @@ import './style.css'
 import { useEffect, useRef} from "react";
 import sanityClient from '../../sanity/client';
 import imageUrlBuilder from "@sanity/image-url";
+import slugify from 'react-slugify';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -35,7 +36,7 @@ const ExpertiseTile = ({name, faIconName, imgUrl}) => {
             <div className="expertiseDetails">
                 <h2 className="expertiseName">{name}</h2>
             </div>
-            <a href={`/expertise/${encodeURIComponent(name)}`} className='expertiseLink'>Learn More</a>
+            <a href={`/expertise/${slugify(name)}`} className='expertiseLink'>Learn More</a>
         </div>
     )
 }

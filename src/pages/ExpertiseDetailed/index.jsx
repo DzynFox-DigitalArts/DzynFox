@@ -14,7 +14,7 @@ import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise'
 
 const ExpertiseDetailed = () => {
 
-    const {name} = useParams();
+    const {slug} = useParams();
 
     useEffect(() => {
         logEvent(analytics, 'expertise_details_page_visit')
@@ -22,13 +22,10 @@ const ExpertiseDetailed = () => {
 
     return(
         <>
-        <Helmet>
-            <title>{name} - DzynFox</title>
-        </Helmet>
-        <HeroSection name={name} />
-        <Portfolio name={name} />
+        <HeroSection slug={slug} />
+        {/* <Portfolio name={name} />
         <JumpToExpertise name={name}/>
-        <QuickResponseForm />
+        <QuickResponseForm /> */}
         </>
     )
 }
