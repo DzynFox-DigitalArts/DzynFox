@@ -5,11 +5,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {lazy, Suspense} from 'react'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// import Home from './pages/Home'
+import Home from './pages/Home'
 
 import Loading from './components/Loading';
 
-const Home = lazy(() => import('./pages/Home'));
+// const Home = lazy(() => import('./pages/Home'));
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 const AllExpertise = lazy(() => import('./pages/AllExpertise'))
 const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
