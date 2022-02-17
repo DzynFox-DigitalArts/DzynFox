@@ -1,4 +1,5 @@
 import './App.css';
+import './pages/Home/style.css'
 import './responsive.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {lazy, Suspense} from 'react'
