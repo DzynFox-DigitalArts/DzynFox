@@ -1,7 +1,8 @@
 import './style.css'
 import logo from '../../drawables/logo.png'
 import {useMediaQuery} from 'react-responsive'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -17,10 +18,10 @@ const Navbar = () => {
                 <a href="/"><img src={logo} alt="DZYNFOX" className="logo" /></a>
                 {isDesktopOrLaptop ? 
                 <ul className="nav-list">
-                    <li className="nav-list-item"><a href="/">Home</a></li>
-                    <li className="nav-list-item"><a href="/expertise">Our Expertise</a></li>
-                    <li className="nav-list-item"><a href="/blog">Our Blog</a></li>
-                    <li className="nav-list-item"><a href="/about-us">About Us</a></li>
+                    <li className="nav-list-item"><Link to="/">Home</Link></li>
+                    <li className="nav-list-item"><Link to="/expertise">Our Expertise</Link></li>
+                    <li className="nav-list-item"><Link to="/blog">Our Blog</Link></li>
+                    <li className="nav-list-item"><Link to="/about-us">About Us</Link></li>
                     <li className="nav-list-item"><a href="/#contact-us">Contact Us</a></li>
                 </ul>
                 :

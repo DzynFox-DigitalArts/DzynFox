@@ -1,9 +1,7 @@
 import './style.css'
 
-import Navbar from '../../components/Navbar'
 import {useParams} from 'react-router-dom'
 import HeroSection from '../../sections/ExpertiseDetailed/HeroSection'
-import Footer from '../../components/Footer'
 import Portfolio from '../../sections/ExpertiseDetailed/Portfolio'
 import QuickResponseForm from '../../components/QuickResponseForm.jsx'
 
@@ -27,12 +25,10 @@ const ExpertiseDetailed = () => {
         <Helmet>
             <title>{name} - DzynFox</title>
         </Helmet>
-        <Navbar />
         <HeroSection name={name} />
         <Portfolio name={name} />
         <JumpToExpertise name={name}/>
         <QuickResponseForm />
-        <Footer />
         </>
     )
 }

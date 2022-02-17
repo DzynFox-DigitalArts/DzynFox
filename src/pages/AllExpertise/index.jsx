@@ -1,5 +1,4 @@
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
+
 import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 import OurExpertise from '../../sections/AllExpertise/OurExpertise';
 
@@ -20,10 +19,8 @@ const AllExpertise = () => {
         <Helmet>
             <title>Our Expertise - DzynFox</title>
         </Helmet>
-        <Navbar />
         <OurExpertise />
         <QuickResponseForm />
-        <Footer />
         <ScrollToTopBtn />
         </>
     )

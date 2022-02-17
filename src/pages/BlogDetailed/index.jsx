@@ -1,8 +1,6 @@
 import './style.css'
 
 import {useParams} from 'react-router-dom'
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import Blog from '../../sections/BlogDetailed/Blog';
 
 import {useEffect} from 'react';
@@ -19,9 +17,7 @@ const BlogDetailed = () => {
 
     return(
         <>
-        <Navbar />
         <Blog slug={slug} />
-        <Footer />
         </>
     )
 }

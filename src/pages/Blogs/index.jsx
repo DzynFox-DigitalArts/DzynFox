@@ -2,11 +2,9 @@ import './style.css'
 import {Helmet} from 'react-helmet'
 import {ClipLoader} from 'react-spinners';
 import {useState, useEffect} from 'react'
-import Navbar from '../../components/Navbar';
 import sanityClient from '../../sanity/client';
 import imageUrlBuilder from "@sanity/image-url";
 import BlogTile from '../../components/BlogTile';
-import Footer from '../../components/Footer'
 import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 import {analytics} from '../../firebase/firebase'
 import {logEvent} from 'firebase/analytics'
@@ -51,7 +49,6 @@ const Blogs = () => {
             <Helmet>
                 <title>Our Featured Blogs - DzynFox</title>
             </Helmet>
-            <Navbar />
             <main className="allBlogs">
                 <h1 className="section-header">
                     Our Featured Blogs
@@ -75,7 +72,6 @@ const Blogs = () => {
                 </div>
             </main>
             <QuickResponseForm />
-            <Footer />
         </div>
     )
 }

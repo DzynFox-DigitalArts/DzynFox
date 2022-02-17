@@ -1,6 +1,5 @@
 import './style.css'
 
-import Navbar from "../../components/Navbar"
 import HeroSection from "../../sections/Home/HeroSection";
 import OurExpertise from '../../sections/Home/OurExpertise';
 import WhyUs from '../../sections/Home/WhyUs';
@@ -9,7 +8,6 @@ import TestimonialSection from '../../sections/Home/TestimonialSection';
 import ContactForm from '../../sections/Home/ContactForm';
 import OurClients from '../../sections/Home/OurClients';
 import OtherBrands from '../../sections/Home/OtherBrands';
-import Footer from '../../components/Footer';
 import {helmetJsonLdProp} from 'react-schemaorg'
 import { Helmet } from 'react-helmet'; 
 
@@ -44,7 +42,6 @@ const Home = () => {
             ]}>
 
             </Helmet>
-            <Navbar />
             <HeroSection />
             <WhyUs />
             <OurExpertise />
@@ -53,7 +50,6 @@ const Home = () => {
             <OurClients />
             <ContactForm />
             <OtherBrands />
-            <Footer />
         </>
     )
 }
