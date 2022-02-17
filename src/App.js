@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home'
 
 import Loading from './components/Loading';
+import VAS from './pages/VAS';
 
 // const Home = lazy(() => import('./pages/Home'));
 const AboutUs = lazy(() => import('./pages/AboutUs'))
@@ -25,9 +26,10 @@ function App() {
         <Navbar/>
         <Suspense fallback={<Loading/>}>
         <Routes>
-            <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home />}/>
           <Route path="about-us" element={<AboutUs />}/>
           {/* <Route path="expertise" element={<AllExpertise />}/> */}
+          <Route path="vas" element={<VAS />}/>
           <Route path="expertise/:name" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
