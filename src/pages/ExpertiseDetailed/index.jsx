@@ -25,7 +25,7 @@ const ExpertiseDetailed = () => {
     return(
         <>
         <Helmet>
-            <title>{slug} - DzynFox</title>
+            <title>{expertiseName} - DzynFox</title>
         </Helmet>
         <HeroSection slug={slug} />
         <Portfolio name={expertiseName} />

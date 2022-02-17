@@ -1,14 +1,8 @@
 import Select from 'react-select';
 import expertiseDetails from '../../data/expertiseDetails';
 
-const selectOptions = [
-    {value: 'hindi', label: 'Hindi'},
-    {value: 'English', label: 'English'},
-    {value: 'CHinese', label: 'CHinese'},
-]
-
-const ExpertiseNames = Object.keys(expertiseDetails).map(name => (
-    {value: name, label: name}
+const ExpertiseNames = Object.keys(expertiseDetails).map(slug => (
+    {value: slug, label: expertiseDetails[slug].name}
 ))
 
 const JumpToExpertise = ({name}) => {
