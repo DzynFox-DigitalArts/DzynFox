@@ -1,15 +1,10 @@
 import expertiseDetails from '../../data/expertiseDetails'
-import { Helmet } from 'react-helmet';
 
 const HeroSection = ({slug}) => {
 
     const expertiseName = expertiseDetails[slug].name;
 
     return(
-        <>
-        <Helmet>
-            <title>{slug} - DzynFox</title>
-        </Helmet>
         <main className="expertiseDetailedHero">
             <h2 className="section-subheader">Lets improve your branding through</h2>
             <h1 className="section-header">{expertiseName}</h1>
@@ -25,7 +20,6 @@ const HeroSection = ({slug}) => {
                 }
             </div>
         </main>
-        </>
     )
 }
 

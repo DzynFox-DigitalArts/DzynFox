@@ -10,11 +10,13 @@ import {Helmet} from 'react-helmet'
 
 import {analytics} from '../../firebase/firebase'
 import {logEvent} from 'firebase/analytics'
+import expertiseDetails from '../../data/expertiseDetails'
 import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise'
 
 const ExpertiseDetailed = () => {
 
     const {slug} = useParams();
+    const expertiseName = expertiseDetails[slug].name;
 
     useEffect(() => {
         logEvent(analytics, 'expertise_details_page_visit')
@@ -22,10 +24,13 @@ const ExpertiseDetailed = () => {
 
     return(
         <>
+        <Helmet>
+            <title>{slug} - DzynFox</title>
+        </Helmet>
         <HeroSection slug={slug} />
-        {/* <Portfolio name={name} />
-        <JumpToExpertise name={name}/>
-        <QuickResponseForm /> */}
+        <Portfolio name={expertiseName} />
+        <JumpToExpertise name={expertiseName}/>
+        <QuickResponseForm />
         </>
     )
 }
