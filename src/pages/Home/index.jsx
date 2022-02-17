@@ -40,7 +40,7 @@ const Home = () => {
                     }
                 )
             ]}>
-
+                <title>DzynFox</title>
             </Helmet>
             <HeroSection />
             <WhyUs />
