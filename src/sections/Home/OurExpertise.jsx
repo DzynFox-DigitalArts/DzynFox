@@ -19,7 +19,7 @@ const OurExpertise = () => {
                 <ExpertiseTile name={"Creative Writing"} faIconName={"fas fa-paragraph"} />
                 <ExpertiseTile name={"Presentations"} faIconName={"fas fa-tv"} />
             </div>
-            <a href="/expertise" className="secondaryBtn">See All Expertise</a>
+            {/* <a href="/expertise" className="secondaryBtn">See All Expertise</a> */}
         </section>
     )
 }

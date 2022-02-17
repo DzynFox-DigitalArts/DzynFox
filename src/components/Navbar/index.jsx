@@ -19,7 +19,7 @@ const Navbar = () => {
                 {isDesktopOrLaptop ? 
                 <ul className="nav-list">
                     <li className="nav-list-item"><Link to="/">Home</Link></li>
-                    <li className="nav-list-item"><Link to="/expertise">Our Expertise</Link></li>
+                    {/* <li className="nav-list-item"><Link to="/expertise">Our Expertise</Link></li> */}
                     <li className="nav-list-item"><Link to="/blog">Our Blog</Link></li>
                     <li className="nav-list-item"><Link to="/about-us">About Us</Link></li>
                     <li className="nav-list-item"><a href="/#contact-us">Contact Us</a></li>
@@ -38,10 +38,10 @@ const Navbar = () => {
                 !isDesktopOrLaptop && isNavOpen && 
                 <div className='mobile-nav'>
                 <ul className="nav-list mobile-nav-list">
-                    <li className="nav-list-item"><a href="/">Home</a></li>
-                    <li className="nav-list-item"><a href="/expertise">Our Expertise</a></li>
-                    <li className="nav-list-item"><a href="/blog">Our Blog</a></li>
-                    <li className="nav-list-item"><a href="/about-us">About Us</a></li>
+                    <li className="nav-list-item"><Link to="/">Home</Link></li>
+                    {/* <li className="nav-list-item"><Link to="/expertise">Our Expertise</Link></li> */}
+                    <li className="nav-list-item"><Link to="/blog">Our Blog</Link></li>
+                    <li className="nav-list-item"><Link to="/about-us">About Us</Link></li>
                     <li className="nav-list-item"><a href="/#contact-us">Contact Us</a></li>
                 </ul>
                 <button className='MobileNavToggle' onClick={() =>  setIsNavOpen(!isNavOpen)}>
