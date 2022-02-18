@@ -22,7 +22,7 @@ const ExpertiseTile = ({name, faIconName, imgUrl}) => {
           )
           .then((data) => {
               if(data.bgimage) {
-                tileRef.current.style.backgroundImage = `url(${urlFor(data.bgimage).width(300).url()})`
+                tileRef.current.style.backgroundImage = `url(${urlFor(data.bgimage).width(300).quality(60).url()})`
               }
         })
           .catch(console.error);
