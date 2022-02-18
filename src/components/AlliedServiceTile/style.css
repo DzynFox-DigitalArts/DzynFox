@@ -1,0 +1,23 @@
+.AlliedServiceTile {
+    display: flex;
+    width: 40vw;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: hsla(0, 100%, 100%, 0.08);
+	box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */
+		0px 3px 4px 0px hsla(0,0%,0%,0.14), 
+		0px 3px 3px -2px hsla(0,0%,0%,0.12), 
+		0px 1px 8px 0px hsla(0,0%,0%,0.2);
+}
+
+.AlliedServiceIcon i {
+    font-size: 5rem;
+}
+
+.AlliedServiceName {
+    font-family: 'Montserrat';
+    margin-bottom: 0.5rem;
+}
