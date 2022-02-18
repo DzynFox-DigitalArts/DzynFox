@@ -20,6 +20,7 @@ const ExpertiseDetailed = () => {
 
     useEffect(() => {
         logEvent(analytics, 'expertise_details_page_visit')
+        window.scrollTo(0,0);
     }, [])
 
     return(
