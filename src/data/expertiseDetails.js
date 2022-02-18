@@ -81,7 +81,22 @@ export default {
     },
     "voice-overs-narrations" : {
         name: 'Voice Overs / Narrations',
-        desc: 'We are working on this'
+        desc: `Your voice is your power. It can change the world.
+        
+        Video is an effective way of communication. And it needs voice narration to make the video more
+        effective.
+        Every brand should have a voice. Your brand voice is the way you talk to your customers. It defines
+        your brand’s style.
+        Voice-over is dialogue, usually narration, that comes from an unseen, offscreen voice, character, or
+        narrator.
+        Companies use voice overs to provide quick exposition.
+        Vocal qualities include volume, pace, pitch, rate, rhythm, fluency, articulation, pronunciation,
+        enunciation, tone, to name a few.
+        Our voice narrators have them all and shall appeal your listeners. We make your viewer feel is very
+        important, for most purchasing decision made are based on emotions.
+        
+        Our voice-over services are
+        Fast. Top Quality. Affordable.`
     },
     "creative-writing" : {
         name: 'Creative Writing',
