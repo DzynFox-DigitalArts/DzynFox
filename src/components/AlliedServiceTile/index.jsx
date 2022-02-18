@@ -6,7 +6,6 @@ const AlliedServiceTile = ({name, desc, faIconName}) => {
             <div className="AlliedServiceIcon"><i className={faIconName}></i></div>
             <div className="AlliedServiceDetails">
                 <h2 className="AlliedServiceName">{name}</h2>
-                <p className="AlliedServiceDesc">{desc}</p>
             </div>
         </div>
     )
