@@ -1,6 +1,9 @@
 .AlliedServiceTile {
     display: flex;
-    width: 40vw;
+    width: 60vw;
+    max-width: 650px;
+    min-width: fit-content;
+    margin: 1rem 0;
     gap: 2rem;
     align-items: center;
     padding: 1rem 2rem;
@@ -15,9 +18,22 @@
 }
 
 .AlliedServiceIcon i {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .AlliedServiceName {
     font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 1300px) {
+    .AlliedServiceTile {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .AlliedServiceTile {
+        width: 90vw;
+        align-self: center !important;
+    }
 }
