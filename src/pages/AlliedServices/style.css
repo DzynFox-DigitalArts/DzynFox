@@ -30,5 +30,6 @@
 }
 
 .allied-services-container .brandImages img {
-    height: 200px;
+    max-height: 200px;
+    height: 15vw;
 }

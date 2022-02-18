@@ -1,7 +1,6 @@
 .AlliedServiceTile {
     display: flex;
-    width: 60vw;
-    max-width: 650px;
+    width: 40vw;
     min-width: fit-content;
     margin: 1rem 0;
     gap: 2rem;
