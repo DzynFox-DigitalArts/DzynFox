@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="about-us" element={<AboutUs />}/>
-          <Route path="vas" element={<VAS />}/>
+          <Route path="allied-services" element={<VAS />}/>
           <Route path="expertise/:slug" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>

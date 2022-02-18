@@ -85,7 +85,7 @@ const ContactForm = () => {
     }
 
     return(
-        <section className="ContactForm" id="contact-us">
+        <section className="ContactForm" id={'contact'}>
             <ToastContainer 
                 position="top-right"
                 autoClose={5000}
