@@ -11,11 +11,11 @@ const AlliedServices = () => {
             <p className="section-details">To serve you better we have partnered with few agencies and professional companies for services that are not our specialization, but are important elements of the business.</p>
             <p className="section-details">The purpose is to have value additions and improved services. Here are few of them</p>
             <div className="allied-services">
-                <AlliedServiceTile faIconName={"fas fa-camera"} name="Photography" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto est, architecto nam aut ad praesentium aliquam eius neque aliquid!"/>
-                <AlliedServiceTile faIconName={"fas fa-video"} name="Videography" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto est, architecto nam aut ad praesentium aliquam eius neque aliquid!"/>
-                <AlliedServiceTile faIconName={"fas fa-building"} name="Company Registration" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto est, architecto nam aut ad praesentium aliquam eius neque aliquid!"/>
-                <AlliedServiceTile faIconName={"fas fa-trademark"} name="Trademark Registration" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto est, architecto nam aut ad praesentium aliquam eius neque aliquid!"/>
-                <AlliedServiceTile faIconName={"fas fa-globe-asia"} name="Domain Registration" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto est, architecto nam aut ad praesentium aliquam eius neque aliquid!"/>
+                <AlliedServiceTile faIconName={"fas fa-camera"} name="Photography"/>
+                <AlliedServiceTile faIconName={"fas fa-video"} name="Videography"/>
+                <AlliedServiceTile faIconName={"fas fa-building"} name="Company Registration"/>
+                <AlliedServiceTile faIconName={"fas fa-trademark"} name="Trademark Registration"/>
+                <AlliedServiceTile faIconName={"fas fa-globe-asia"} name="Domain Registration"/>
             </div>
             <div className="allied-section-other-brands">
                 <h2 className="section-subheader">You might need services of our other partner companies too.</h2>
