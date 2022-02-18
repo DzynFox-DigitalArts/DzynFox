@@ -10,7 +10,7 @@ import Loading from './components/Loading';
 
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
-const VAS = lazy(() => import('./pages/VAS'))
+const AlliedServices = lazy(() => import('./pages/AlliedServices'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogDetailed = lazy(() => import('./pages/BlogDetailed'))
 const HBD = lazy(() => import('./pages/HBD'))
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="about-us" element={<AboutUs />}/>
-          <Route path="allied-services" element={<VAS />}/>
+          <Route path="allied-services" element={<AlliedServices />}/>
           <Route path="expertise/:slug" element={<ExpertiseDetailed />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
