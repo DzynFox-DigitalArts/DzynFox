@@ -4,6 +4,7 @@
 
 .quickResponseForm .ContactFormContent {
     min-height: 40vh;
+    margin-top: 1rem
 }
 
 .quickResponseForm .ContactForm-Form .fnameInputGrp{
