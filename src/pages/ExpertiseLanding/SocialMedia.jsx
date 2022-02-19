@@ -14,7 +14,7 @@ const SocialMedia = () => {
             </Helmet>
             <main className="expertiseLandingHero">
                 <div className="text">
-                <h1>We make social media marketing accessible for everyone</h1>
+                <h1>We make social media posts look attractive</h1>
                 <p>
                     Social Media is more of sociology &amp; psychology than technology. It demands creativity.
                     Social Media Posts require the right content, to the right people, at the right time.

@@ -28,7 +28,7 @@ function App() {
           <Route path="about-us" element={<AboutUs />}/>
           <Route path="allied-services" element={<AlliedServices />}/>
           <Route path="expertise/:slug" element={<ExpertiseDetailed />}/>
-          <Route path="social-media-marketing" element={<SocialMedia />}/>
+          <Route path="social-media-designs" element={<SocialMedia />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
           <Route path="hbd" element={<HBD />}/>
