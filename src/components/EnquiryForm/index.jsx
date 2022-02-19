@@ -119,7 +119,7 @@ const EnquiryForm = () => {
                 draggable
                 pauseOnHover
             />
-            <div className="quickResponseForm enquiryForm">
+            <div className="quickResponseForm enquiryForm" id='enquiryForm'>
                 <h1 className="section-header">Contact Us</h1>
                 <div className="ContactFormContent">
                     <div className="ContactInfo">

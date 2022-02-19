@@ -22,7 +22,7 @@ const SocialMedia = () => {
                     Quality of content is just as important as quantity. It’s the quality of the visuals that can command
                     the attention of a high speed scroller. And we can create the impact.
                 </p>
-                <button type="button" className="contactBtn">Raise a Query</button>
+                <button type="button" className="contactBtn" onClick={() => document.querySelector('#enquiryForm').scrollIntoView({behavior: 'smooth'})}>Raise a Query</button>
                 </div>
                 <img src={SMMHero} alt={"Social Media Marketing"}/>
             </main>
