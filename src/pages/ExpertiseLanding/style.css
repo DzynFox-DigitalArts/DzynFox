@@ -1,0 +1,44 @@
+.expertiseLandingHero {
+    display: flex;
+    padding: 0 5vw;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 9vw);
+}
+
+.expertiseLanding section {
+    padding: 0 5vw;
+    margin-bottom: 2rem;
+}
+
+.expertiseLanding section p {
+    font-size: 1.2rem;
+}
+
+.expertiseLandingHero .text {
+    width: 40vw;
+}
+
+.expertiseLandingHero .text h1{
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.expertiseLandingHero button {
+    margin-top: 2rem;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--brand-black);
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    box-shadow: 2px 2px 10px var(--brand-black);
+}
+
+.expertiseLandingHero img {
+    width: 30vw;
+}
