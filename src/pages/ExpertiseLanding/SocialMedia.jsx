@@ -3,8 +3,8 @@ import '../../pages/ExpertiseDetailed/style.css';
 import { Helmet } from 'react-helmet'
 import Portfolio from '../../sections/ExpertiseDetailed/Portfolio';
 import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise';
-import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 import SMMHero from '../../drawables/SMMHero.jpg';
+import EnquiryForm from '../../components/EnquiryForm';
 
 const SocialMedia = () => {
     return (
@@ -54,7 +54,7 @@ const SocialMedia = () => {
             </section>
             <Portfolio name={"Social Media Marketing"} />
             <JumpToExpertise name={"Social Media Marketing"}/>
-            <QuickResponseForm/>
+            <EnquiryForm />
         </div>
     )
 }
