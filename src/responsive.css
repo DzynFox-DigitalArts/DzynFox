@@ -41,6 +41,24 @@
     }
 }
 
+@media screen and (max-width: 880px ) {
+    .expertiseLandingHero {
+        flex-direction: column-reverse !important;
+    }
+
+    .expertiseLandingHero .text {
+        width: 80vw !important;
+    }
+
+    .expertiseLandingHero img {
+        width: 80vw !important;
+    }
+
+    .expertiseLandingHero .text button {
+        margin: 2rem auto;
+    }    
+}
+
 @media screen and (max-width: 780px) {
     .CustomSelectContainer {
         flex-direction: column;
@@ -142,6 +160,15 @@
     .link-button {
         font-size: 1rem !important;
     }
+
+    .ContactFormContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContactFormContent .ContactInfo {
+        margin: 1rem !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -171,14 +198,5 @@
     .expertise-container .expertiseTile {
         width: 90vw !important;
         height: 90vw !important;
-    }
-    /* SECTION STYLES: CONTACT US FORM */
-    .ContactFormContent .ContactInfo {
-        margin: 1rem !important;
-    }
-    
-    .ContactFormContent {
-        display: flex;
-        flex-direction: column;
     }
 }

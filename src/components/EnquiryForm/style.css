@@ -22,3 +22,10 @@
 .quickResponse .ContactForm-Form {
     min-height: 300px;
 }
+
+@media screen and (max-width: 768px) {
+    .enquiryForm .ContactFormContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
