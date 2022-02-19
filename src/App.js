@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home'
 import Loading from './components/Loading';
+import SocialMedia from './pages/ExpertiseLanding/SocialMedia';
 
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
@@ -27,6 +28,7 @@ function App() {
           <Route path="about-us" element={<AboutUs />}/>
           <Route path="allied-services" element={<AlliedServices />}/>
           <Route path="expertise/:slug" element={<ExpertiseDetailed />}/>
+          <Route path="social-media-marketing" element={<SocialMedia />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
           <Route path="hbd" element={<HBD />}/>

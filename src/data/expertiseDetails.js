@@ -200,6 +200,37 @@ export default {
         ]
     }
     ,
+    "social-media-marketing" : {
+        name: "Social Media Marketing",
+        desc: `Social Media is more of sociology & psychology than technology. It demands creativity.
+            Social Media Posts require the right content, to the right people, at the right time.
+            More important than content is context. Therefore, content strategy is very important.
+            Quality of content is just as important as quantity. It’s the quality of the visuals that can command
+            the attention of a high speed scroller. And we can create the impact.
+
+            Our services include:
+
+            1. Creating a social media design strategy
+            2. Designing your page with the right content and the cover photo
+            3. Creating a post calendar
+            4. Creating the content & the designs
+            5. Creating the post narrations with useful keywords
+            6. Choosing the trending hashtags
+
+            The various types of post designs are:
+            
+            1. Date posts
+            2. Creative posts
+            3. Ad posts
+            4. Festival posts
+            5. Remembrance posts
+            6. Trending posts
+            7. Quizzes
+            8. Games
+            9. Polls
+            10. Contests`
+    }
+    ,
     // "Logo Design" : "Logo design is a branding and marketing tool that can be used to signify a business. Put simply; your logo represents your business brand. It’s something simple that, as you build brand loyalty, your customers come to trust and recognise. DzynFox is the strongest bridge to build that trust & support with your customers by designing logos for you. Trust us, we're the Best in this field.",
     // "Web Design" : "Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website's overall functionality. Web design also includes web apps, mobile apps, and user interface design. That's why We, DzynFox is here to help you out in every aspect. Connect with us we shall take you to a whole new aspects of Web Designing, where Designing will be fun. Trust us We're the best in this field.",
     // "Illustration" : "An illustration is a visualization or a depiction made by an artist, such as a drawing, sketch, painting, photograph, or other kind of image of things seen, remembered or imagined, using a graphical representation. At DzynFox, We have perfect visualization that you require. We will see through your eyes colors, & paint it with our creativity & present before a wonderful creation that will awestruck you. Believe it or not, We're the best in this field.",
