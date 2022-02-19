@@ -1,11 +1,16 @@
 import './style.css'
 import AlliedServiceTile from "../../components/AlliedServiceTile";
+import QuickResponseForm from '../../components/QuickResponseForm.jsx';
 import MarkallLogo from '../../drawables/OtherBrands/markallLogo.png';
 import SpreadInIndiaLogo from '../../drawables/OtherBrands/spreadInIndiaLogo.png';
+import { Helmet } from 'react-helmet';
 
 const AlliedServices = () => {
     return(
         <div className="allied-services-container">
+            <Helmet>
+                <title>Our Allied Services</title>
+            </Helmet>
             <h1 className="section-header">Allied Services</h1>
             <h2 className="section-subheader">Alone we can do too little. Together we can do so much.</h2>
             <p className="section-details">To serve you better we have partnered with few agencies and professional companies for services that are not our specialization, but are important elements of the business.</p>
@@ -24,6 +29,7 @@ const AlliedServices = () => {
                     <a href="https://spreadinindia.markall.in/" target="_blank"><img src={SpreadInIndiaLogo} alt="Spread In India" /></a>
                 </div>
             </div>
+            <QuickResponseForm />
         </div>
     )
 }
