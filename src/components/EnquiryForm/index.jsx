@@ -173,7 +173,7 @@ const EnquiryForm = () => {
                         <div className="inputGroup">
                             <Select 
                                 options={postPerMonths}
-                                defaultValue={{value: "Select", label: "Required posts per month?"}}
+                                defaultValue={{value: "Select", label: "Posts per month?"}}
                                 onChange={value => setPostPerMonth(value.value)}
                             />
                         </div>
