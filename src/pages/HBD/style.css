@@ -3,7 +3,7 @@
     width: 100vw;
     object-fit: contain;
     max-height: 300px;
-    top: -50px;
+    top: -20px;
     z-index: -10;
     flex: 1;
 }
