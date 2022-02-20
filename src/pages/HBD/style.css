@@ -44,6 +44,11 @@
     text-align: center;
 }
 
+.hbd p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .next-wish {
     width: 100%;
     display: flex;
@@ -92,11 +97,15 @@
 }
 
 .hbd h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
     font-family: 'Quicksand';
 }
 
 .hbd .advertisement {
     margin: 1rem 0;
+    opacity: 0.7;
 }
 
 .hbd a {

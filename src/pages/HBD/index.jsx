@@ -74,6 +74,9 @@ const HBD = () => {
             <Helmet>
                 <title>Happy Birthday!</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
+                <meta property="og:title" content="Happy Birthday!" />
+                <meta property="og:description" content="DzynFox Visual Communications wishes you a very happy birthday" />
+                <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/dzynfox-b9303.appspot.com/o/Untitled%20design%20(2).png?alt=media&token=e97cf640-66cc-4bf5-aea8-4d03c39af302" />
             </Helmet>
             <Confetti 
                 height={window.innerHeight}
@@ -90,7 +93,8 @@ const HBD = () => {
                 <img src={Cake} alt="Flags" className='hbdBgImageCake'/>
                 <div className="intro-text">
                     <h1 className="hide">
-                        <span className="text"><pre>{wishes[index]}</pre></span>
+                        <p>The more you praise and celebrate your life <br />
+                        the more there is in life to celebrate.</p>
                     </h1>
                 </div>
                 {/* <div className="next-wish">
