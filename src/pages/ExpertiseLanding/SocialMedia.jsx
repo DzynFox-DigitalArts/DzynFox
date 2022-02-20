@@ -5,8 +5,14 @@ import Portfolio from '../../sections/ExpertiseDetailed/Portfolio';
 import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise';
 import SMMHero from '../../drawables/SMMHero.jpg';
 import EnquiryForm from '../../components/EnquiryForm';
+import { useEffect } from 'react';
 
 const SocialMedia = () => {
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+
     return (
         <div className="SocialMediaLanding expertiseLanding">
             <Helmet>
