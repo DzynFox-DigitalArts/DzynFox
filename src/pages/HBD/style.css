@@ -26,7 +26,7 @@
 }
 
 .hbd {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100vw;
     position: fixed;
     overflow: hidden;
@@ -103,6 +103,7 @@
 
 .hbd h2 {
     font-size: 1rem;
+    /* font-weight: lighter; */
     text-align: center;
     font-family: 'Quicksand';
 }
@@ -116,5 +117,5 @@
 }
 
 .adlogo {
-    height: 80px !important;
+    height: 100px !important;
 }
