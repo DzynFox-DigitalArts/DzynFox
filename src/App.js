@@ -6,15 +6,16 @@ import {lazy, Suspense} from 'react'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home'
+import HBD from './pages/HBD'
 import Loading from './components/Loading';
-import SocialMedia from './pages/ExpertiseLanding/SocialMedia';
 
 const AboutUs = lazy(() => import('./pages/AboutUs'))
 const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
 const AlliedServices = lazy(() => import('./pages/AlliedServices'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogDetailed = lazy(() => import('./pages/BlogDetailed'))
-const HBD = lazy(() => import('./pages/HBD'))
+
+const SocialMedia = lazy(() => import('./pages/ExpertiseLanding/SocialMedia'))
 
 function App() {
 
