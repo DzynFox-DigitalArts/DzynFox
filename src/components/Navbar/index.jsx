@@ -21,7 +21,7 @@ const Navbar = () => {
     return(
         <header>
             <nav>
-                <a href="/"><img src={logo} alt="DZYNFOX" className="logo" /></a>
+                <Link to="/"><img src={logo} alt="DZYNFOX" className="logo" /></Link>
                 {isDesktopOrLaptop ? 
                 <ul className="nav-list">
                     <li className="nav-list-item"><Link to="/">Home</Link></li>
