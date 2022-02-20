@@ -6,6 +6,7 @@ import Cake from '../../drawables/separated/Cake.png'
 import Balloons from '../../drawables/separated/balloons.mp4'
 import { gsap } from 'gsap'
 import {Helmet} from 'react-helmet'
+import { Link } from 'react-router-dom'
 
 
 const wishes = [
@@ -92,8 +93,12 @@ const HBD = () => {
                         <span className="text"><pre>{wishes[index]}</pre></span>
                     </h1>
                 </div>
-                <div className="next-wish">
+                {/* <div className="next-wish">
                     <button onClick={showNextMsg}>More Wishes</button>
+                </div> */}
+                <div className="advertisement">
+                    <h2>For all of your designing needs please choose</h2>
+                    <Link to={'/'}><h1 className="section-header">DZYN<span className='accentText'>FOX</span></h1></Link>
                 </div>
             </div>
         </div>
