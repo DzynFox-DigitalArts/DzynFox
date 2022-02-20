@@ -4,6 +4,7 @@ import './style.css'
 import Flags from '../../drawables/separated/Flags.png'
 import Cake from '../../drawables/separated/Cake.png'
 import Balloons from '../../drawables/separated/balloons.mp4'
+import Logo from '../../drawables/logo.png';
 import { gsap } from 'gsap'
 import {Helmet} from 'react-helmet'
 
@@ -73,9 +74,6 @@ const HBD = () => {
             <Helmet>
                 <title>Happy Birthday!</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
-                <meta property="og:title" content="Happy Birthday!" />
-                <meta property="og:description" content="DzynFox Visual Communications wishes you a very happy birthday" />
-                <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/dzynfox-b9303.appspot.com/o/Untitled%20design%20(2).png?alt=media&token=e97cf640-66cc-4bf5-aea8-4d03c39af302" />
             </Helmet>
             <Confetti 
                 height={window.innerHeight}
@@ -100,8 +98,8 @@ const HBD = () => {
                     <button onClick={showNextMsg}>More Wishes</button>
                 </div> */}
                 <div className="advertisement">
-                    <h2>For all of your designing needs please choose</h2>
-                    <a href='/'><h1 className="section-header">DZYN<span className='accentText'>FOX</span></h1></a>
+                    <a href="/"><img src={Logo} className="adlogo" /></a>
+                    <h2>Design Agency</h2>
                 </div>
             </div>
         </div>
