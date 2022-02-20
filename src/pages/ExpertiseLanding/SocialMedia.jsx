@@ -58,8 +58,8 @@ const SocialMedia = () => {
                 10. Contests <br />
                 </p>
             </section>
-            <Portfolio name={"Social Media Marketing"} />
-            <JumpToExpertise name={"Social Media Marketing"}/>
+            <Portfolio name={"Social Media Design"} />
+            <JumpToExpertise name={"Social Media Design"}/>
             <EnquiryForm />
         </div>
     )

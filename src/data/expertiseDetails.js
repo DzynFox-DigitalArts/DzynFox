@@ -201,7 +201,7 @@ export default {
     }
     ,
     "social-media-marketing" : {
-        name: "Social Media Marketing",
+        name: "Social Media Design",
         route: '/social-media-designs'
     }
     ,
