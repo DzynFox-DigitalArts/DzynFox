@@ -3,7 +3,7 @@ import { useEffect, useRef} from "react";
 import sanityClient from '../../sanity/client';
 import imageUrlBuilder from "@sanity/image-url";
 import slugify from 'react-slugify';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -13,6 +13,11 @@ function urlFor(source) {
 const ExpertiseTile = ({name, faIconName, imgUrl}) => {
 
     const tileRef = useRef()
+    const navigate = useNavigate();
+
+    const navigateToExpertise = () => {
+      navigate(`/expertise/${slugify(name)}`)
+    }
 
     useEffect(() => {
         sanityClient
@@ -30,7 +35,7 @@ const ExpertiseTile = ({name, faIconName, imgUrl}) => {
     }, []);
 
     return(
-        <div className="expertiseTile" ref={tileRef}>
+        <div className="expertiseTile" ref={tileRef} onClick={navigateToExpertise}>
             <div className="expertise-icon">
                 <i className={faIconName}></i>
             </div>

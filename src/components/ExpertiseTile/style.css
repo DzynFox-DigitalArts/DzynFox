@@ -58,16 +58,18 @@
     transition: all ease 0.4s;
 }
 
-.expertiseTile:hover .expertiseDetails {
-    opacity: 1;
-}
-
-.expertiseTile:hover .expertiseLink {
-    opacity: 1;
-}
-
-.expertiseTile:hover::before {
-    transform: scaleY(1);
+@media (hover: hover) {
+    .expertiseTile:hover .expertiseDetails {
+        opacity: 1;
+    }
+    
+    .expertiseTile:hover .expertiseLink {
+        opacity: 1;
+    }
+    
+    .expertiseTile:hover::before {
+        transform: scaleY(1);
+    }
 }
 
 @media screen and (min-width: 1600px) {
