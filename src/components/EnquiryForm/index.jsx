@@ -156,12 +156,12 @@ const EnquiryForm = () => {
                             <label htmlFor="phone" className="inputLbl">Phone*</label>
                         </div>
                         <div className="inputGroup">
-                            <input type="tel" name="phone" value={company} onChange={e => setCompany(e.target.value)}/>
-                            <label htmlFor="phone" className="inputLbl">Company Name</label>
+                            <input type="text" name="Company" value={company} onChange={e => setCompany(e.target.value)}/>
+                            <label htmlFor="Company" className="inputLbl">Company Name</label>
                         </div>
                         <div className="inputGroup">
-                            <input type="tel" name="phone" value={industry} onChange={e => setIndustry(e.target.value)}/>
-                            <label htmlFor="phone" className="inputLbl">Industry Type</label>
+                            <input type="text" name="industry" value={industry} onChange={e => setIndustry(e.target.value)}/>
+                            <label htmlFor="industry" className="inputLbl">Industry Type</label>
                         </div>
                         <div className="inputGroup">
                             <Select 
