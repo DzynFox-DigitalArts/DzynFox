@@ -3,7 +3,7 @@ import '../../pages/ExpertiseDetailed/style.css';
 import { Helmet } from 'react-helmet'
 import Portfolio from '../../sections/ExpertiseDetailed/Portfolio';
 import JumpToExpertise from '../../sections/ExpertiseDetailed/JumpToExpertise';
-import SMMHero from '../../drawables/SMMHero.jpg';
+import SMMHero from '../../drawables/SocialMedia.jpg';
 import EnquiryForm from '../../components/EnquiryForm';
 import { useEffect } from 'react';
 
@@ -16,11 +16,11 @@ const SocialMedia = () => {
     return (
         <div className="SocialMediaLanding expertiseLanding">
             <Helmet>
-                <title>Social Media Marketing - DzynFox</title>
+                <title>Social Media Designs - DzynFox</title>
             </Helmet>
             <main className="expertiseLandingHero">
                 <div className="text">
-                <h1>We make social media posts look attractive</h1>
+                <h1>Beauty attracts the eyes but personality captures the heart.<br /> We create posts that are <span className="redText">good looking</span> and <span className="redText">build your identity</span>.</h1>
                 <p>
                     Social Media is more of sociology &amp; psychology than technology. It demands creativity.
                     Social Media Posts require the right content, to the right people, at the right time.

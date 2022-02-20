@@ -47,6 +47,10 @@ h1 {
     color: black;
 }
 
+.redText {
+    color: red;
+}
+
 .link-button {
     display: block;
     background-color: black;
