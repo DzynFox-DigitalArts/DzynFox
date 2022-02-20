@@ -36,29 +36,6 @@ const HBD = () => {
     const coverRef = useRef(null)
     const selector = gsap.utils.selector(coverRef);
     const tl = useRef();
-    const [index, setIndex] = useState(0);
-
-    const showNextMsg = () => {
-        setIndex((index + 1) % wishes.length)
-    }
-
-    useEffect(() => {
-        tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
-        .to(selector('.fast'), {
-            y: '-180vh',
-            duration: 5,
-            repeat: -1
-        })
-    }, [])
-
-    useEffect(() => {
-        tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
-        .to(selector('.slow'), {
-            y: '-180vh',
-            duration: 4,
-            repeat: -1
-        })
-    })
 
     useEffect(() => {
         tl.current = gsap.timeline({defaults: {ease: 'power1.out'}})
@@ -79,36 +56,27 @@ const HBD = () => {
                 height={window.innerHeight}
                 width={window.innerWidth}
             />
-            <video autoPlay loop muted className='balloons leftballoons'>
+            <div className="hbdContent">
+                <img src={Flags} alt="Birthday Flags" className='flags'/>
+                <video autoPlay loop muted className='balloons leftballoons'>
                 <source src={Balloons} />
-            </video>
-            <video autoPlay loop muted className='balloons rightballoons'>
+                </video>
+                <video autoPlay loop muted className='balloons rightballoons'>
                 <source src={Balloons} />
-            </video>
-            <div className="wish-container">
-                <img src={Flags} alt="Flags" className='hbdBgImageFlag'/>
-                <img src={Cake} alt="Flags" className='hbdBgImageCake'/>
+                </video>
+                <img src={Cake} alt="Birthday Cake" className='cake' />
                 <div className="intro-text">
                     <h1 className="hide">
-                        <p>The more you praise and celebrate your life <br />
-                        the more there is in life to celebrate.</p>
+                        <span className='text'>The more you praise and celebrate your life <br />
+                        the more there is in life to celebrate.</span>
                     </h1>
                 </div>
-                {/* <div className="next-wish">
-                    <button onClick={showNextMsg}>More Wishes</button>
-                </div> */}
                 <div className="advertisement">
                     <a href="/"><img src={Logo} className="adlogo" /></a>
                     <h2>Design Agency</h2>
                 </div>
             </div>
         </div>
-    )
-}
-
-const wishOne = () => {
-    return (
-        null
     )
 }
 
