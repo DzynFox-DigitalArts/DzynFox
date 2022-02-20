@@ -21,7 +21,17 @@
 
 .expertiseLandingHero .text h1{
     margin: 2rem 0;
+    font-weight: normal;
+}
+
+
+.expertiseLandingHero .redText {
     font-weight: bold;
+}
+
+.expertiseLandingHeading {
+    font-size: 2.3rem;
+    font-family: 'Montserrat';
 }
 
 .expertiseLandingHero button {
@@ -41,4 +51,10 @@
 
 .expertiseLandingHero img {
     width: 40vw;
+}
+
+@media screen and (max-width: 600px) {
+    .expertiseLandingHeading {
+        font-size: 2rem;
+    }
 }
