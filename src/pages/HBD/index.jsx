@@ -6,7 +6,6 @@ import Cake from '../../drawables/separated/Cake.png'
 import Balloons from '../../drawables/separated/balloons.mp4'
 import { gsap } from 'gsap'
 import {Helmet} from 'react-helmet'
-import { Link } from 'react-router-dom'
 
 
 const wishes = [
@@ -102,7 +101,7 @@ const HBD = () => {
                 </div> */}
                 <div className="advertisement">
                     <h2>For all of your designing needs please choose</h2>
-                    <Link to={'/'}><h1 className="section-header">DZYN<span className='accentText'>FOX</span></h1></Link>
+                    <a href='/'><h1 className="section-header">DZYN<span className='accentText'>FOX</span></h1></a>
                 </div>
             </div>
         </div>
