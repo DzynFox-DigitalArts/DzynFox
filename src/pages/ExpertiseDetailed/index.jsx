@@ -19,9 +19,9 @@ const ExpertiseDetailed = () => {
     const expertiseName = expertiseDetails[slug].name;
 
     useEffect(() => {
-        logEvent(analytics, 'expertise_details_page_visit')
+        logEvent(analytics, `expertise_details_page_visit_${slug}`)
         window.scrollTo(0,0);
-    }, [])
+    }, [slug])
 
     return(
         <>
