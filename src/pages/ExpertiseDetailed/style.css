@@ -63,6 +63,10 @@
     width: 100%;
 }
 
+.portfolio .imageDiv img {
+    width: 100% !important;
+}
+
 @media screen and (max-width: 468px) {
     .portfolio .embedContainer{
         padding: 0.5rem !important;

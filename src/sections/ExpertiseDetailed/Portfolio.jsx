@@ -9,6 +9,13 @@ function urlFor(source) {
   return builder.image(source);
 }
 
+const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+};
+
 const OurPortfolio = ({name}) => {
 
 
@@ -66,7 +73,7 @@ const OurPortfolio = ({name}) => {
                         {
                             allImage && 
                             allImage.map((image, index) => (
-                                <img key={index} src={urlFor(image).url()} alt="Portfolio"/>
+                                <div key={index} className="imageDiv"><img src={urlFor(image).url()} alt="Portfolio"/></div>
                             )) 
                         }
                     </Masonry>
