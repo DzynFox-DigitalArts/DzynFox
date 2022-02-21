@@ -17,6 +17,10 @@ const OurPortfolio = ({name}) => {
     const [pdfs, setPdfs] = useState(undefined);
 
     useEffect(() => {
+        setAllImages(undefined);
+        setVideoUrls(undefined);
+        setPdfs(undefined);
+        
         sanityClient
           .fetch(
             `*[_type == "expertise" && title == $name][0]{
@@ -44,7 +48,7 @@ const OurPortfolio = ({name}) => {
                 setPdfs(data.pdfs)
             })
           .catch(console.error);
-    }, []);
+    }, [name]);
 
     return(
         <main className="OurPortfolio" id="portfolio">

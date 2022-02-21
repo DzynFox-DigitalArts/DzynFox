@@ -18,7 +18,7 @@ const JumpToExpertise = ({name}) => {
                 isSearchable={true} 
                 options={ExpertiseNames}
                 defaultValue={{value: name, label: name}}
-                onChange={e => navigate(e.value)}
+                onChange={e => {window.scrollTo(0,0); navigate(e.value)}}
             />
         </div>
     )
