@@ -14,6 +14,7 @@ const ExpertiseDetailed = lazy(() => import('./pages/ExpertiseDetailed'))
 const AlliedServices = lazy(() => import('./pages/AlliedServices'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogDetailed = lazy(() => import('./pages/BlogDetailed'))
+const Partners = lazy(() => import('./pages/Partners'))
 
 const SocialMedia = lazy(() => import('./pages/ExpertiseLanding/SocialMedia'))
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="social-media-designs" element={<SocialMedia />}/>
           <Route path="blog" element={<Blogs />}/>
           <Route path="blog/:slug" element={<BlogDetailed />}/>
+          <Route path="partners" element={<Partners />}/>
           <Route path="hbd" element={<HBD />}/>
           <Route path='*' element={<h1>Page Not Found</h1>} exact={true}/>
         </Routes>

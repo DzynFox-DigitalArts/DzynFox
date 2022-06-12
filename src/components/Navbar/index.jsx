@@ -29,6 +29,7 @@ const Navbar = () => {
                     <li className="nav-list-item"><Link to="/allied-services">Allied Services</Link></li>
                     <li className="nav-list-item"><Link to="/blog">Our Blog</Link></li>
                     <li className="nav-list-item"><Link to="/about-us">About Us</Link></li>
+                    <li className="nav-list-item"><Link to="/partners">Our Partners</Link></li>
                     <li className="nav-list-item"><HashLink to="/#contact">Contact Us</HashLink></li>
                 </ul>
                 :
@@ -50,6 +51,7 @@ const Navbar = () => {
                     <li className="nav-list-item"><Link to="/allied-services">Allied Services</Link></li>
                     <li className="nav-list-item"><Link to="/blog">Our Blog</Link></li>
                     <li className="nav-list-item"><Link to="/about-us">About Us</Link></li>
+                    <li className="nav-list-item"><Link to="/partners">Our Partners</Link></li>
                     <li className="nav-list-item"><HashLink to="/#contact">Contact Us</HashLink></li>
                 </ul>
                 <button className='MobileNavToggle' onClick={() =>  setIsNavOpen(!isNavOpen)}>

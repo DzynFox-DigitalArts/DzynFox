@@ -1,0 +1,19 @@
+.partnerTile {
+    overflow: hidden;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all ease 0.3s;
+    padding: 1.5rem;
+    width: 350px;
+}
+
+.partnerName {
+    font-size: 1.5rem;
+    font-family: 'Quicksand';
+}
+
+@media screen and (max-width: 468px) {
+    .partnerTile {
+        width: 80vw;
+    }
+}

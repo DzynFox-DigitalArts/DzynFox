@@ -13,6 +13,7 @@ import expertise from './expertise'
 import testimonials from './testimonials'
 import greetings from './greetings'
 import pdfcontent from './pdfcontent'
+import partners from './partners'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -33,5 +34,6 @@ export default createSchema({
     expertise,
     testimonials,
     greetings,
+    partners
   ]),
 })
