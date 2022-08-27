@@ -81,14 +81,14 @@ const PageLoadAnimation = () => {
                     <span className="text">DzynFox</span>
                 </h1>
                 <h2 className="hide">
-                    <span className="text">A creative agency</span>
+                    <span className="text">Design Agency | Creative Agency | Advertising Agency | Branding Agency</span>
                 </h2>
                 <h3 className="hide">
-                    <span className="text">Connecting New Dots in a</span>
+                    <span className="text">Creating identities &amp; enhancing perceptions</span>
                 </h3>
-                <h3 className="hide">
+                {/* <h3 className="hide">
                     <span className="text">Brand New Way</span>
-                </h3>
+                </h3> */}
             </div>
             {greetings
                 ?
