@@ -60,7 +60,7 @@ const PageLoadAnimation = () => {
         })
         .to(coverRef.current, {
             y: '-100%',
-        }, '-=1')
+        }, '-=3')
     }
 
     const moveSliderNoContent = () => {
@@ -71,24 +71,27 @@ const PageLoadAnimation = () => {
         })
         .to(coverRef.current, {
             y: '-100%',
-        }, '-=2')
+        }, '-=3')
     }
 
     return(
         <div className="pageLoadAnimation" ref={coverRef}>
             <div className="intro-text">
                 <h1 className="hide">
-                    <span className="text">DzynFox</span>
+                    <span className="text"><span className="black">DZYN</span>FOX</span>
                 </h1>
                 <h2 className="hide">
-                    <span className="text">Design Agency | Creative Agency | Advertising Agency | Branding Agency</span>
+                    <span className="text secondary">
+                        Design&nbsp;<strong>Agency</strong> <span className="bar"> |&nbsp;</span>
+                        Creative&nbsp;<strong>Agency</strong> 
+                        <br /> 
+                        Advertising&nbsp;<strong>Agency</strong> <span className="bar"> |&nbsp;</span>
+                        Branding&nbsp;<strong>Agency</strong>
+                    </span>
                 </h2>
                 <h3 className="hide">
-                    <span className="text">Creating identities &amp; enhancing perceptions</span>
+                    <span className="text">Creating identities &amp; <span className="black">enhancing perceptions</span></span>
                 </h3>
-                {/* <h3 className="hide">
-                    <span className="text">Brand New Way</span>
-                </h3> */}
             </div>
             {greetings
                 ?

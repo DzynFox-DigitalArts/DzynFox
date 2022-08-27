@@ -68,3 +68,27 @@
     display: inline-block;
     transform: translateY(100%);
 }
+
+span.black {
+    color: black;
+    transform: translateY(0);
+}
+
+span.secondary strong {
+    color: black;
+    font-weight: bold;
+}
+
+span.bar {
+    transform: translateY(0);
+}
+
+span.secondary {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    span.bar {
+        display: none !important;
+    }
+}
