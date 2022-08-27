@@ -48,7 +48,7 @@ const PageLoadAnimation = () => {
         }).to(selector('.slider'), {
             y: '0%',
             duration: '1',
-            delay: '2'
+            delay: '3'
         })
     }, [])
 
@@ -60,7 +60,7 @@ const PageLoadAnimation = () => {
         })
         .to(coverRef.current, {
             y: '-100%',
-        }, '-=3')
+        }, '-=2')
     }
 
     const moveSliderNoContent = () => {
@@ -71,7 +71,7 @@ const PageLoadAnimation = () => {
         })
         .to(coverRef.current, {
             y: '-100%',
-        }, '-=3')
+        }, '-=2')
     }
 
     return(
